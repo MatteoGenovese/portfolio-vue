@@ -61,7 +61,7 @@ export default {
   
 }
 
-.wrapper:hover .card {
+.wrapper:hover .card, .wrapper:active .card {
   transform: rotateY(180deg);
 }
 
