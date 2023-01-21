@@ -39,6 +39,12 @@ export default {
                 this.$router.push({ params: { lang: lang } })
         }
     },
+    data: function () {
+        return {
+            languageSelected: 'en',
+            changhingLanguage: false
+        }
+    },
     props:{
         tag:{
             require:true,
@@ -47,12 +53,6 @@ export default {
         tagIndex:{
             require:true,
             type:Number
-        }
-    },
-    data: function () {
-        return {
-            languageSelected: 'en',
-            changhingLanguage: false
         }
     },
     mounted: function () {
