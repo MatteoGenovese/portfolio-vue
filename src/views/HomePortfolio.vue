@@ -1,6 +1,8 @@
 <template>
     <div>
-        <HeaderComponent />
+        <!-- <HeaderComponent /> -->
+
+        <LanguageSwitcher />
 
         <HomeJumbotron />
 
@@ -9,6 +11,8 @@
         <CoreTechnologies />
 
         <MyProjects />
+
+        <FooterComponent />
 
     </div>
 </template>
@@ -20,6 +24,8 @@ import HomeJumbotron from '@/components/HomeJumbotron.vue'
 import CoreTechnologies from '@/components/CoreTechnologies.vue'
 import AboutMe from '@/components/AboutMe.vue'
 import MyProjects from '@/components/MyProjects.vue'
+import FooterComponent from '@/components/FooterComponent.vue'
+import LanguageSwitcher from '@/components/LanguageSwitcher.vue'
 
 export default {
   name: 'HomePortfolio',
@@ -28,8 +34,16 @@ export default {
     HomeJumbotron,
     CoreTechnologies,
     AboutMe,
-    MyProjects
-  }
+    MyProjects,
+    FooterComponent,
+    LanguageSwitcher
+  },
+  data: function () {
+        return {
+            
+        }
+    }
+
 }
 </script>
 
@@ -58,12 +72,12 @@ button{
 
 section{
     &:not(:last-child) {
-        background-color: #eeeeee;
-        padding: 5rem 0;
+        background-color: $section-color;
+        padding: 5rem 2rem;
     }
     &:last-child {
-        background-color: #eeeeee;
-        padding-top: 5rem;
+        background-color: $section-color;
+        padding-top: 0rem;
     }
 }
 
@@ -71,6 +85,8 @@ section{
 section:nth-child(even) {
     background-color: white;
 }
+
+
 
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;

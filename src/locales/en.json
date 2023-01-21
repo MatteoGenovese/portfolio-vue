@@ -1,0 +1,165 @@
+{
+    "home-jumbotron": {
+        "title": "Dear visitor, welcome.",
+        "description": "The following is a <b>PORTFOLIO</b> of a full stack web developer."
+    },
+    "contact-me": "Contact me",
+    "about-me": {
+        "i-am": "I'm",
+        "first-paragraph": "<b>I'm passionate about technology and innovation</b>. With my experience in web development, I am able to create and implement engaging and user-friendly websites. ",
+        "second-paragraph": "My experience includes both <b>front-end and back-end technologies</b>. In addition to creating responsive designs, I am able to make them mobile-friendly as well.",
+        "third-paragraph": "As a team player, I enjoy collaborating with designers, project managers, and other professionals to bring projects to life. I am also highly organized and detail-oriented, and I am able to identify and troubleshoot technical problems.<br><b>I'm always looking for new challenges and opportunities to learn and grow.</b>"
+    },
+    "core-technologies": {
+        "title-composition": {
+            "first-word": "The",
+            "second-word": "Technologies",
+            "third-word": "I use"
+        },
+        "first-paragraph": "I use various <b>frameworks</b> for app development: <ul><li>Spring to create apps in Java;</li><li>Laravel for apps in PHP;</li> <li>and Vue.js for interactive user interfaces in Javascript.</li></ul>These frameworks help me create efficient and scalable solutions.",
+        "second-paragraph": "I use these languages to create <b>custom solutions</b>. <br>My background in Java allows me to create solutions for businesses, while PHP and JavaScript help me create solutions for the web.",
+        "third-paragraph": "I develop <b>user interfaces</b> using HTML, CSS, Sass, and Bootstrap. <br>I create <b>responsive layouts</b> and use Sass and Bootstrap for styling user interfaces.",
+        "fourth-paragraph": "I am able to create and <b>interact with databases</b> through SQL queries and through Spring and Laravel, which provide a simplified channel for communication with databases. <br>I use <b>Git</b> for version control and <b>GitHub</b> for collaboration."
+    },
+    "my-projects": {
+        "title-composition": {
+            "first-word": "My",
+            "second-word": "best",
+            "third-word": "projects"
+        },
+        "found-message": {
+            "found-result": "Found",
+            "found-results": "Found",
+            "results": "results",
+            "result": "result"
+        },
+        "works": [{
+                "id": 1,
+                "imageName": "BoolBnb.png",
+                "visible": true,
+                "title": "BoolBnB",
+                "description": "Boolbnb is a web project similar to Airbnb.<br>This web app  allows users to search for apartments and contact owners, using search filters to find the perfect accommodation. <br>Owners can enter and edit information about their apartments, view received messages and view statistics, and promote the apartment with a subscription to increase visibility.",
+                "tags": [
+                    "Laravel",
+                    "TomTom API",
+                    "JavaScript",
+                    "Axios",
+                    "Vue.js",
+                    "PHP",
+                    "Sass",
+                    "Html+Css"
+                ],
+                "gitHubLink": "https://github.com/MatteoGenovese/BoolBnb",
+                "webSiteLink": ""
+            },
+            {
+                "id": 2,
+                "imageName": "BoolFlix.png",
+                "visible": true,
+                "title": "BoolFlix",
+                "gitHubLink": "https://github.com/MatteoGenovese/vue-boolflix",
+                "webSiteLink": "",
+                "description": "BoolFlix is a site similar to Netflix. <br>Users can search for movies and TV shows using a search string, but the results are not playable and instead provide information about the content in the form of rotating cards. <br>When the user accesses the site or the search bar is empty, the most popular content is displayed. <br>BoolFlix uses the API of themoviedb.org to get information about movies and TV shows.",
+                "tags": [
+                    "JavaScript",
+                    "Vue.js",
+                    "Moviedb.org API",
+                    "Axios",
+                    "Sass",
+                    "Html+Css"
+                ]
+            },
+            {
+                "id": 3,
+                "imageName": "CargoProject.png",
+                "visible": true,
+                "title": "Cargo Project",
+                "description": "The project involved developing a web page using the JavaScript framework Vue.js CLI. <br>During the 3 days of this project, Vue components were used to create the page structure and manage the operating logic. <br>The props feature was also used to simulate data passing between components. <br>Additionally, Sass was used for managing styles and variables for different components, allowing for greater flexibility and maintainability of the code.",
+                "tags": [
+                    "JavaScript",
+                    "Vue.js",
+                    "Sass",
+                    "Html+Css"
+                ],
+                "gitHubLink": "https://github.com/MatteoGenovese/proj-html-vuejs",
+                "webSiteLink": ""
+            },
+            {
+                "id": 4,
+                "imageName": "VueBoolZapp.png",
+                "visible": true,
+                "title": "BoolZapp",
+                "description": "BoolZapp is a messaging application inspired by WhatsApp, created with the JavaScript framework Vue.js. <br>Among its features, users can search for other users, open individual chats, send and receive simulated messages.",
+                "tags": [
+                    "JavaScript",
+                    "Vue.js",
+                    "Html+Css"
+                ],
+                "gitHubLink": "https://github.com/MatteoGenovese/vue-boolzapp",
+                "webSiteLink": ""
+            },
+            {
+                "id": 5,
+                "imageName": "DcComics.png",
+                "visible": true,
+                "title": "DcComics",
+                "description": "The project involved creating a website inspired by the official website of DC Comics, which focused on comics. <br>Vue.js was used to create the user interface and manage the site logic. <br>Data was passed to various tabs using props, a feature of Vue.js that allows for passing information between components dinamically.",
+                "tags": [
+                    "JavaScript",
+                    "Vue.js",
+                    "Html+Css"
+                ],
+                "gitHubLink": "https://github.com/MatteoGenovese/vue-dc-comics",
+                "webSiteLink": ""
+            },
+            {
+                "id": 6,
+                "imageName": "Dropbox.png",
+                "visible": true,
+                "title": "Dropbox",
+                "gitHubLink": "https://github.com/MatteoGenovese/htmlcss-dropbox",
+                "webSiteLink": "",
+                "description": "The project involved creating a static website inspired by the popular file storage and sharing service Dropbox. <br>HTML and CSS code was used to create a site with a similar design.",
+                "tags": [
+                    "Html+Css"
+                ]
+            },
+            {
+                "id": 7,
+                "imageName": "Playstation.png",
+                "visible": true,
+                "title": "Playstation",
+                "description": "The project involved creating a static website inspired by the official website of the gaming platform PlayStation. <br>HTML and CSS code was used to create a site with a similar design.",
+                "tags": [
+                    "Html+Css"
+                ],
+                "gitHubLink": "https://github.com/MatteoGenovese/htmlcss-playstation",
+                "webSiteLink": ""
+            },
+            {
+                "id": 8,
+                "imageName": "DiscorsStatic.png",
+                "visible": true,
+                "title": "Discord",
+                "gitHubLink": "https://github.com/MatteoGenovese/htmlcss-discord",
+                "description": "Discord was one of the first projects in Boolean Careers. <br>The project involved creating a static website inspired by the popular online communication service Discord. <br>HTML and CSS code was used to create a site with a similar design.",
+                "webSiteLink": "",
+                "tags": [
+                    "Html+Css"
+                ]
+            },
+            {
+                "id": 9,
+                "imageName": "SpotifyStatic.png",
+                "visible": true,
+                "title": "Spotify Web",
+                "description": "Spotify Web is a static replica of the Spotify app, created with HTML and CSS. <br>It was one of the first projects that used these languages to create a user interface and includes small animations to emphasize the user experience.",
+                "tags": [
+                    "Html+Css"
+                ],
+                "gitHubLink": "https://github.com/MatteoGenovese/html-css-spotifyweb",
+                "webSiteLink": ""
+            }
+        ]
+    }
+}

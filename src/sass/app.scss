@@ -1,5 +1,5 @@
 .box {
-    height: 100vh;
+    min-height: 50rem;
     width: 100%;
     justify-content: flex-start;
 }
@@ -12,6 +12,8 @@
 @import './base';
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+// flag-icons
+@import "/node_modules/flag-icons/css/flag-icons.min.css";
 // Font-Awesome
 // @import "~@fortawesome/fontawesome-free/scss/fontawesome";
 // @import "~@fortawesome/fontawesome-free/scss/regular";

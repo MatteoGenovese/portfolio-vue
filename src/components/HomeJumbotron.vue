@@ -1,22 +1,32 @@
 <template>
     <section id="jumbotron" class="box">
-        <div class="h-100 d-flex justify-content-center align-items-center align-content-center">
+        <div class="h-100 d-flex justify-content-center align-items-center align-content-center position-relative">
             <div class="align-items-center">
                 <p>
-                    Hello, visitor.
+                    {{ $t('home-jumbotron.title') }}
+
                 </p>
-                <h2>
-                    This is a PORTFOLIO of a full stack web developer
+                <h2 v-html="$t('home-jumbotron.description')">
                 </h2>
             </div>
+            <ScrollAnimation />
         </div>
+
+
     </section>
 </template>
 
-<script>
-export default {
 
+<script>
+import ScrollAnimation from '@/components/ScrollAnimation.vue'
+
+export default {
+  name: 'HomePortfolio',
+  components: {
+    ScrollAnimation,
+  }
 }
+
 </script>
 
 <style lang="scss">
@@ -30,13 +40,12 @@ export default {
                         url(../assets/jumbotron.jpg);
     width: 100%;
     object-fit: cover;
-    height: calc(100vh - 5rem);
+    height: calc(100vh);
     p, h1, h2{
+        font-size: 3rem;
         color: #eeeeee;
     }
 }
 
-.profile-photo {
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-}
+
 </style>>

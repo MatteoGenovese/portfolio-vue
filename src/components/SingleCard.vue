@@ -9,7 +9,7 @@
             <div class="card__back d-flex flex-column justify-content-between">
                 <div class="content">
                     <h2>{{ work.title }}</h2>
-                    <p>{{ work.description }}</p>
+                    <p v-html="work.description"></p>
                 </div>
 
                 <div class="link">
@@ -43,8 +43,8 @@ export default {
 
   props: {
     work: {
-      type: Object,
-      required: true
+    //   type: Object,
+    //   required: true
     }
   },
 
@@ -86,7 +86,7 @@ export default {
       backface-visibility: hidden;
       background-size: contain;
       background-position: center center;
-      background-color: red;
+      background-color: transparent;
 
 
   }

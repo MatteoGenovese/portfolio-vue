@@ -1,5 +1,5 @@
 <template>
-    <div class="Filter mx-2">
+    <div class="Filter mx-4 mb-4">
         <button v-if="!tag.active"
                 type="button"
                 class="btn btn__outline-custom"
@@ -9,7 +9,7 @@
 
         <button v-else
                 type="button"
-                class="btn btn__custom"
+                class="btn btn__custom mx-5 mb-4"
                 @click="$emit('changeActive', tagIndex )">
             {{ tag.tag }}
         </button>
