@@ -89,7 +89,7 @@ export default {
         &__front {
             overflow: hidden;
             cursor: pointer;
-            backface-visibility: hidden;
+            // backface-visibility: hidden;
             background-size: contain;
             background-position: center center;
             background-color: transparent;
@@ -128,7 +128,6 @@ export default {
             border-radius: 0.5rem;
             top: 0;
             left: 0;
-            backface-visibility: hidden;
             img {
                 width: 100%;
                 object-fit: contain;
@@ -140,6 +139,10 @@ export default {
 
 @media (hover: hover)
 {
+
+    .card__front {
+            backface-visibility: hidden;
+    }
     .wrapper:hover .card {
         transform: rotateY(180deg);
     }
@@ -151,6 +154,11 @@ export default {
         position: absolute;
     }
 
+    .card__front,
+    .card__back {
+            backface-visibility: hidden;
+        }
+
 
 }
 
@@ -159,6 +167,16 @@ export default {
 
     .wrapper.back .card {
         transform: rotateY(180deg);
+
+    }
+
+    .wrapper.back .card__front{
+        backface-visibility: hidden;
+
+    }
+
+    .wrapper.active .card__back{
+        backface-visibility: hidden;
     }
 
 
