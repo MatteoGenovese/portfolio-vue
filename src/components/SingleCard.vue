@@ -147,8 +147,6 @@ export default {
         transform: rotateY(180deg);
     }
 
-
-
     .card__back {
         transform: rotateY(180deg);
         position: absolute;
@@ -172,13 +170,22 @@ export default {
 
     .wrapper.back .card__front{
         backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+
 
     }
 
     .wrapper.active .card__back{
         backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+
     }
 
+    .wrapper.back .card__back{
+        z-index: 1000;
+
+
+    }
 
 
     .card__back {
