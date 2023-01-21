@@ -2,11 +2,13 @@
 <div v-if="work.visible" class="wrapper" data-aos="fade-in">
         <div class="card h-100">
 
-            <div class="card__front">
+            <div class="card__front" 
+                    @click="cardToggle()" :class="isFrontActive ? 'active' : ''">
                 <img :src="require(`../assets/works/${work.imageName}`)" :alt="work.imageName" class="img-fluid">
             </div>
 
-            <div class="card__back d-flex flex-column justify-content-between">
+            <div class="card__back d-flex flex-column justify-content-between"
+                    @click="cardToggle()" :class="!isFrontActive ? 'active' : ''">
                 <div class="content">
                     <h2>{{ work.title }}</h2>
                     <p v-html="work.description"></p>
@@ -47,6 +49,17 @@ export default {
     //   required: true
     }
   },
+  methods: {    
+    cardToggle: function () {
+            this.isFrontActive=!this.isFrontActive;
+            console.log(this.isFrontActive)
+        }
+    },
+    data: function () {
+        return {
+            isFrontActive: true,
+        }
+    },
 
 }
 </script>
@@ -61,7 +74,7 @@ export default {
   
 }
 
-.wrapper:hover .card, .wrapper:active .card {
+.wrapper:hover .card, .card__front.active {
   transform: rotateY(180deg);
 }
 
@@ -81,7 +94,8 @@ export default {
   border-radius: 0.5rem;
   position: relative;
 
-  &__front {
+
+  &__front.active {
       cursor: pointer;
       backface-visibility: hidden;
       background-size: contain;
@@ -91,11 +105,11 @@ export default {
 
   }
 
-  &__back {
+  &__back.active {
       transform: rotateY(180deg);
       position: absolute;
       background-color: $primary_color_light;
-      padding: 4rem 4rem;
+
 
       .content {
           h2 {
@@ -116,6 +130,9 @@ export default {
       }
 
 
+  }
+  &__back {
+    padding: 4rem 4rem;
   }
 
   &__front,
