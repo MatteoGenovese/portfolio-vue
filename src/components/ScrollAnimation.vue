@@ -20,7 +20,8 @@ export default {
         position: absolute;
         opacity: 30%;
         left: 50%;
-        top: 90%;
+        transform: translate(-50%);
+        top: 80%;
         font-size: 50px;
         -webkit-animation: bounce 1s 3;
         animation: bounce 1s 3;
@@ -28,25 +29,25 @@ export default {
     
     @-webkit-keyframes bounce {
         0% {
-            top: 90%;
+            top: 80%;
         }
         50% {
-            top: 95%;
+            top: 85%;
         }
         100% {
-            top: 90%;
+            top: 80%;
         }
     }
     
     @keyframes bounce {
         0% {
-            top: 90%;
+            top: 80%;
         }
         50% {
-            top: 95%;
+            top: 85%;
         }
         100% {
-            top: 90%;
+            top: 80%;
         }
     }
 </style>
