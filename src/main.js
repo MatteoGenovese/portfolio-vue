@@ -6,6 +6,7 @@ import store from './store'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import i18n from './i18n'
 // ..
 
 
@@ -32,10 +33,26 @@ AOS.init({
 
 });
 
+
+//use beforeEach route guard to set the Language
+router.beforeEach((to, from, next) => {
+    //set the language
+    const language = to.params.lang;
+
+    //redirect to default language if no language is specified
+    if (language) {
+        i18n.locale = language;
+    }
+    i18n.locale = language;
+    next();
+});
+
+
 Vue.config.productionTip = false
 
 new Vue({
     router,
     store,
+    i18n,
     render: h => h(App)
 }).$mount('#app')
