@@ -1,9 +1,9 @@
 <template>
     <div v-if="work.visible" class="wrapper " @click="cardToggle()" :class="isFrontActive ? ' active' : ' back'">
-        <div class="cs-card ">
+        <div class="cs-card">
 
             <div class="cs-card__front">
-                 <img :src="require(`../assets/works/${work.imageName}`)" :alt="work.imageName" class="img-fluid"> 
+                <img :src="require(`../assets/works/${work.imageName}`)" :alt="work.imageName" class="img-fluid">
             </div>
 
             <div class="cs-card__back d-flex flex-column justify-content-between">
@@ -64,28 +64,32 @@ export default {
 <style lang="scss">
 @import '../sass/app.scss';
 
-@media (hover: hover)
-{
+@media (hover: hover) {
     .wrapper {
-        &:hover .cs-card__front{
+        &:hover {
+            transition: all .8s ease;
+        }
+
+        &:hover .cs-card__front {
             opacity: 0;
             transform: translateX(-100%);
-        } 
-        &:hover .cs-card__back{
+        }
+
+        &:hover .cs-card__back {
             opacity: 1;
             transform: translateX(0%);
         }
     }
 }
 
-@media (hover: none)
-{
+@media (hover: none) {
     .wrapper {
-        &.back .cs-card__front{
+        &.back .cs-card__front {
             opacity: 0;
             transform: translateX(-100%);
-        } 
-        &.back .cs-card__back{
+        }
+
+        &.back .cs-card__back {
             opacity: 1;
             transform: translateX(0%);
         }
@@ -99,7 +103,10 @@ export default {
     width: 100%;
     position: relative;
     border-radius: 1rem;
-    transition: all .8s ease;
+    box-shadow: 0 1.5rem 4rem rgba($secondary_color_dark, .4);
+        -moz-box-shadow: 0 1.5rem 4rem rgba($secondary_color_dark, .4);
+        -webkit-box-shadow: 0 1.5rem 4rem rgba($secondary_color_dark, .4);
+        -o-box-shadow: 0 1.5rem 4rem rgba($secondary_color_dark, .4);
 
     .cs-card {
         height: 100%;
@@ -111,11 +118,11 @@ export default {
             text-align: center;
             font-size: 1.2rem;
         }
+
         &__title {
-            background-image:linear-gradient(
-                        to right bottom,
-                        rgba(#0F2027, 0.9),
-                        rgba(#1CB5E0, 0.9));
+            background-image: linear-gradient(to right bottom,
+                    rgba(#0F2027, 0.9),
+                    rgba(#1CB5E0, 0.9));
             border-radius: 1rem;
             padding: 1rem 0;
             vertical-align: middle;
@@ -147,18 +154,19 @@ export default {
 
 
 
-    .link {
-        .tags {
-            margin-top: 0.5rem;
-        }
+.link {
+    .tags {
+        margin-top: 0.5rem;
     }
+}
 
-    a.btn {
-        transition: all 0.2s ease-out;
-        font-size: $default-font-size;
-        &:hover {
-            scale: 1.1;
-            transform: translateY(-0.3rem);
-        }
+a.btn {
+    transition: all 0.2s ease-out;
+    font-size: $default-font-size;
+
+    &:hover {
+        scale: 1.1;
+        transform: translateY(-0.3rem);
     }
+}
 </style>
