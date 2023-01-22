@@ -95,7 +95,7 @@ export default {
 }
 
 .wrapper {
-    // overflow: hidden;
+    overflow: hidden;
     height: 50rem;
     width: 100%;
     position: relative;
