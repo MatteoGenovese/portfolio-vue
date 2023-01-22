@@ -13,7 +13,7 @@
 
         <div class="col-lg-8 col-12 d-flex align-content-center align-items-center">
             <div data-aos="fade-left" class="about-me  d-flex flex-column w-100 justify-content-center">
-                <div class="about-me__description d-flex align-items-center ">
+                <div class="about-me__description d-flex flex-column flex-md-row align-items-center ">
                     <div class="icon">
                         <i class="fa-solid fa-code"></i>
                     </div>
@@ -21,14 +21,14 @@
                         
                     </p>
                 </div>
-                <div class="about-me__description d-flex align-items-center">
+                <div class="about-me__description d-flex flex-column flex-md-row align-items-center">
                     <div class="icon">
                         <i class="fa-solid fa-wand-magic-sparkles"></i>
                     </div>
                     <p v-html="$t('about-me.second-paragraph')">
                     </p>
                 </div>
-                <div class="about-me__description d-flex align-items-center">
+                <div class="about-me__description d-flex flex-column flex-md-row align-items-center">
                     <div class="icon">
                         <i class="fa-solid fa-people-group"></i>
                     </div>
