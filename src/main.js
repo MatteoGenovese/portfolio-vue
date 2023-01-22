@@ -39,10 +39,11 @@ router.beforeEach((to, from, next) => {
     //set the language
     const language = to.params.lang;
 
-    //redirect to default language if no language is specified
-    if (language) {
-        i18n.locale = language;
+    //if no language was set, set the default language to english
+    if (!language) {
+        i18n.locale = 'en';
     }
+    //set the current language for i18n.
     i18n.locale = language;
     next();
 });

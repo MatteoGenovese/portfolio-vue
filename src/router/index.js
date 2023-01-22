@@ -31,10 +31,14 @@ const router = new VueRouter({
                     name: 'home',
                     component: HomePortfolio
                 },
+                {
+                    path: '*',
+                    redirect: `/${i18n.locale}/`
+                }
             ],
         },
         {
-            path: '*',
+            path: '/*',
             redirect: `/${i18n.locale}/`
         }
     ]
