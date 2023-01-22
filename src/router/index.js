@@ -7,39 +7,37 @@ import i18n from '../i18n'
 
 Vue.use(VueRouter)
 
-const routes = [
-
-    {
-        path: '/',
-        redirect: `/${i18n.locale}/`
-    },
-    {
-        path: '/:lang',
-        component: {
-            render(c) { return c('router-view') }
-        },
-        children: [{
-                path: '/',
-                name: 'home',
-                component: HomePortfolio
-            },
-            {
-                path: '',
-                name: 'home',
-                component: HomePortfolio
-            },
-        ],
-    },
-    {
-        path: '*',
-        redirect: `/${i18n.locale}/`
-    }
-]
-
 const router = new VueRouter({
     mode: 'history',
-    base: process.env.BASE_URL,
-    routes
+    routes: [
+
+        {
+            path: '/',
+            redirect: `/${i18n.locale}/`
+
+        },
+        {
+            path: '/:lang',
+            component: {
+                render(c) { return c('router-view') }
+            },
+            children: [{
+                    path: '/',
+                    name: 'home',
+                    component: HomePortfolio
+                },
+                {
+                    path: '',
+                    name: 'home',
+                    component: HomePortfolio
+                },
+            ],
+        },
+        {
+            path: '*',
+            redirect: `/${i18n.locale}/`
+        }
+    ]
 })
 
 export default router
