@@ -35,13 +35,12 @@ export default {
     methods: {    
         changeLanguage: function (lang) {
             this.$i18n.locale = lang
-            if(!this.$router.currentRoute.params == lang)
-                this.$router.push({ params: { lang: lang } })
+            // if(!this.$router.currentRoute.params == lang)
+                this.$router.push({ params: { 'lang': lang } }).catch(()=>{});
         }
     },
     data: function () {
         return {
-            languageSelected: 'en',
             changhingLanguage: false
         }
     },

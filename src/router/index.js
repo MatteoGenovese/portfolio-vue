@@ -12,7 +12,6 @@ const routes = [
     {
         path: '/',
         redirect: `/${i18n.locale}`
-
     },
     {
         path: '/:lang',
@@ -20,16 +19,10 @@ const routes = [
             render(c) { return c('router-view') }
         },
         children: [{
-                path: '',
-                name: 'home',
-                component: HomePortfolio
-            },
-            // {
-            //     path: '/comingsoon',
-            //     name: 'ComingSoon',
-            //     component: ComingSoonComponent
-            // },
-        ],
+            path: '/',
+            name: 'home',
+            component: HomePortfolio
+        }, ],
     },
 ]
 
