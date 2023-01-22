@@ -19,10 +19,16 @@ const routes = [
             render(c) { return c('router-view') }
         },
         children: [{
-            path: '/',
-            name: 'home',
-            component: HomePortfolio
-        }, ],
+                path: '/',
+                name: 'home',
+                component: HomePortfolio
+            },
+            {
+                path: '',
+                name: 'home',
+                component: HomePortfolio
+            },
+        ],
     },
 ]
 
