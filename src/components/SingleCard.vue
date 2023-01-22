@@ -8,8 +8,8 @@
 
             <div class="cs-card__back d-flex flex-column justify-content-between">
                 <div class="content">
-                    <h2>{{ work.title }}</h2>
-                    <p v-html="work.description"></p>
+                    <h2 class="cs-card__title">{{ work.title }}</h2>
+                    <p v-html="work.description" class="cs-card__description"></p>
                 </div>
 
                 <div class="link">
@@ -23,10 +23,9 @@
                     <a :href="work.gitHubLink" class="btn btn-primary ms-2">
                         GitHub link
                     </a>
-                    <div class="tags">
-                        Tags:
+                    <div class="cs-card__tags">
                         <span v-for="(tag, index) in work.tags" :key="index">
-                            #{{ tag }}
+                            -{{ tag }}
                         </span>
                     </div>
                 </div>
@@ -102,15 +101,31 @@ export default {
     border-radius: 1rem;
     transition: all .8s ease;
 
-
-
-
-
-
     .cs-card {
         height: 100%;
         width: 100%;
         text-align: center;
+
+        &__tags {
+            margin-top: 1.5rem;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        &__title {
+            background-image:linear-gradient(
+                        to right bottom,
+                        rgba(#0F2027, 0.9),
+                        rgba(#1CB5E0, 0.9));
+            border-radius: 1rem;
+            padding: 1rem 0;
+            vertical-align: middle;
+            color: $primary_color_light;
+        }
+
+        &__description {
+            margin-top: 1.5rem;
+            text-align: justify;
+        }
 
         &__front {
             height: 100%;
