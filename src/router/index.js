@@ -30,6 +30,10 @@ const routes = [
             },
         ],
     },
+    {
+        path: '*',
+        redirect: `/${i18n.locale}/`
+    }
 ]
 
 const router = new VueRouter({
