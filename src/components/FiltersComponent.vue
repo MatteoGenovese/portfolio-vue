@@ -3,14 +3,14 @@
         <button v-if="!tag.active"
                 type="button"
                 class="btn btn__outline-custom"
-                @click="$emit('changeActive', tagIndex )">
+                @click="$emit('changeActive', tagIndex ), activeButton=!activeButton">
             {{ tag.tag }}
         </button>
 
         <button v-else
                 type="button"
                 class="btn btn__custom"
-                @click="$emit('changeActive', tagIndex )">
+                @click="$emit('changeActive', tagIndex ), activeButton=!activeButton">
             {{ tag.tag }}
         </button>
     </div>
