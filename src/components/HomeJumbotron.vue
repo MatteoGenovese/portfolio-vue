@@ -6,7 +6,7 @@
                     {{ $t('home-jumbotron.title') }}
 
                 </p>
-                <h2 v-html="$t('home-jumbotron.description')">
+                <h2 v-html="$t('home-jumbotron.description')" class="presentation">
                 </h2>
             </div>
             <ScrollAnimation />
@@ -44,6 +44,10 @@ export default {
     p, h1, h2{
         font-size: 3rem;
         color: #eeeeee;
+    }
+
+    .presentation{
+        text-align: start;
     }
 }
 
