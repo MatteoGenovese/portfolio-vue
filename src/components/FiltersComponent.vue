@@ -59,7 +59,7 @@ button.btn{
         color: $secondary_color_light;
         background-color: $primary_color_light;
 
-        &:hover{
+        &:hover, &:active, &:visited{
             color: $primary_color_light;
             background-color: $secondary_color_light;
             scale: 1.1;
@@ -72,12 +72,13 @@ button.btn{
         color: $primary_color_light;
         background-color: $secondary_color_light;
 
-        &:hover{
+        &:hover, &:active, &:visited{
             color: $primary_color_light;
             background-color: $secondary_color_light;
             scale: 1.1;
             transform: translateY(-0.3rem);
         }
+
 
     }
 
