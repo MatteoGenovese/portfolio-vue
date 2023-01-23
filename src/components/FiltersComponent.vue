@@ -3,6 +3,7 @@
         <button 
                 type="button"
                 class="btn btn__outline-custom"
+                :class="activeButton ? 'btn__outline-custom--active' : ''"
                 @click="$emit('changeActive', tagIndex ), changeActive()">
             {{ tag.tag }}
         </button>
@@ -59,13 +60,21 @@ button.btn{
         background-color: $primary_color_light;
                 color: $secondary_color_light;
 
-            &:hover{
+
+                @media (hover: hover) {
+                    &:hover{
                 background-color: $secondary_color_light;
                 color: $primary_color_light;
                 scale: 1.1;
                 transform: translateY(-0.3rem);
             }
-            &:active{
+
+                }
+
+
+
+
+            &--active{
                 background-color: $secondary_color_light;
                 color: $primary_color_light;
                 scale: 1.1;
