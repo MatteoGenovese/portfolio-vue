@@ -13,8 +13,8 @@
 
         <div class="col-md-6 col-12 g-5">
             <div data-aos="fade-right" class="technology-card">
-                <div class="technology-card__image w-100 align-content-center d-flex align-self-center ">
-                    <img src="../assets/frameworks.png" class="  w-100 align-items-center">
+                <div class="technology-card__image w-100 justify-content-center align-content-center d-flex align-self-center ">
+                    <img src="../assets/frameworks.png" class="w-75 align-items-center">
                 </div>
                 <div class="technology-card__description">
                     <p class="text-justify" v-html="$t('core-technologies.first-paragraph')">
@@ -25,8 +25,8 @@
 
         <div class="col-md-6 col-12 g-5">
             <div data-aos="fade-right" class="technology-card">
-                <div class="technology-card__image w-100  align-content-center d-flex align-self-center ">
-                    <img src="../assets/languages.png" class="  w-100 align-items-center">
+                <div class="technology-card__image w-100 justify-content-center align-content-center d-flex align-self-center ">
+                    <img src="../assets/languages.png" class="w-75 align-items-center">
                 </div>
                 <div class="technology-card__description">
                     <p class="text-justify" v-html="$t('core-technologies.second-paragraph')">
@@ -37,8 +37,8 @@
 
         <div class="col-md-6 col-12 g-5">
             <div data-aos="fade-right" class="technology-card">
-                <div class="technology-card__image w-100  align-content-center d-flex align-self-center ">
-                    <img src="../assets/markupAndStyle.png" class="  w-100 align-items-center">
+                <div class="technology-card__image w-100 justify-content-center align-content-center d-flex align-self-center ">
+                    <img src="../assets/markupAndStyle.png" class="w-75 align-items-center">
                 </div>
                 <div class="technology-card__description">
                     <p class="text-justify" v-html="$t('core-technologies.third-paragraph')">
@@ -49,8 +49,8 @@
 
         <div class="col-md-6 col-12 g-5">
             <div data-aos="fade-right" class="technology-card">
-                <div class="technology-card__image w-100  align-content-center d-flex align-self-center ">
-                    <img src="../assets/db.png" class="  w-100 align-items-center">
+                <div class="technology-card__image w-100 justify-content-center align-content-center d-flex align-self-center ">
+                    <img src="../assets/db.png" class="w-75 align-items-center">
                 </div>
                 <div class="technology-card__description">
                     <p class="text-justify" v-html="$t('core-technologies.fourth-paragraph')">
@@ -80,7 +80,7 @@ export default {
 
 .technology-card{
 
-    padding: 5rem;
+    padding: 3rem;
     background-image: linear-gradient(
                 to right bottom,
                 rgba($primary_color_light, 0.7),

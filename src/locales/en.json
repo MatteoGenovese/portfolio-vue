@@ -16,10 +16,10 @@
             "second-word": "Technologies",
             "third-word": "I use"
         },
-        "first-paragraph": "I use various <b>frameworks</b> for app development: <ul><li>Spring to create apps in Java;</li><li>Laravel for apps in PHP;</li> <li>and Vue.js for interactive user interfaces in Javascript.</li></ul>These frameworks help me create efficient and scalable solutions.",
-        "second-paragraph": "I use these languages to create <b>custom solutions</b>. <br>My background in Java allows me to create solutions for businesses, while PHP and JavaScript help me create solutions for the web.",
-        "third-paragraph": "I develop <b>user interfaces</b> using HTML, CSS, Sass, and Bootstrap. <br>I create <b>responsive layouts</b> and use Sass and Bootstrap for styling user interfaces.",
-        "fourth-paragraph": "I am able to create and <b>interact with databases</b> through SQL queries and through Spring and Laravel, which provide a simplified channel for communication with databases. <br>I use <b>Git</b> for version control and <b>GitHub</b> for collaboration."
+        "first-paragraph": "I use several <b>frameworks</b> for app development.<br>These frameworks serve to simplify and speed up development, providing a solid and standardized base on which to build the application, as well as to ensure compatibility and code maintainability.",
+        "second-paragraph": "The frameworks still leave many opportunities for <b>customization</b> and adaptation to specific project requirements.<br>Programming languages are used to make these customizations, writing code that interfaces with the libraries and tools provided by the framework.",
+        "third-paragraph": "I develop <b>user interfaces</b> using HTML, CSS, Sass and Bootstrap. I create <b>responsive layouts</b> (adaptable to any device) and use Sass and Bootstrap for user interface styling.<br>Together, these tools are used to create and customize websites and applications.",
+        "fourth-paragraph": "I am able to create, and <b>interact with databases</b> through SQL queries and through Spring and Laravel which offer a simplified channel for communication with databases.<br>I use <b>Git</b> for version control and <b>GitHub</b> for collaboration."
     },
     "my-projects": {
         "title-composition": {
@@ -28,6 +28,8 @@
             "third-word": "projects"
         },
         "found-message": {
+            "totals": "Totals",
+            "projects": "projects",
             "found-result": "Found",
             "found-results": "Found",
             "results": "results",
@@ -38,7 +40,7 @@
                 "imageName": "BoolBnb.png",
                 "visible": true,
                 "title": "BoolBnB",
-                "description": "Boolbnb is a web project similar to Airbnb.<br>This web app  allows users to search for apartments and contact owners, using search filters to find the perfect accommodation. <br>Owners can enter and edit information about their apartments, view received messages and view statistics, and promote the apartment with a subscription to increase visibility.",
+                "description": "Boolbnb is a web project similar to Airbnb.<br>This web app  allows users to search for apartments and contact owners, using search filters to find the perfect accommodation.<br>Owners can enter and edit information about their apartments, view received messages and view statistics, and promote the apartment with a subscription to increase visibility.",
                 "tags": [
                     "Laravel",
                     "TomTom API",
@@ -59,7 +61,7 @@
                 "title": "BoolFlix",
                 "gitHubLink": "https://github.com/MatteoGenovese/vue-boolflix",
                 "webSiteLink": "",
-                "description": "BoolFlix is a site similar to Netflix. <br>Users can search for movies and TV shows using a search string, but the results are not playable and instead provide information about the content in the form of rotating cards. <br>When the user accesses the site or the search bar is empty, the most popular content is displayed. <br>BoolFlix uses the API of themoviedb.org to get information about movies and TV shows.",
+                "description": "BoolFlix is a site similar to Netflix.<br>Users can search for movies and TV shows using a search string, but the results are not playable and instead provide information about the content in the form of rotating cards.<br>When the user accesses the site or the search bar is empty, the most popular content is displayed.<br>BoolFlix uses the API of themoviedb.org to get information about movies and TV shows.",
                 "tags": [
                     "JavaScript",
                     "Vue.js",
@@ -74,7 +76,7 @@
                 "imageName": "CargoProject.png",
                 "visible": true,
                 "title": "Cargo Project",
-                "description": "The project involved developing a web page using the JavaScript framework Vue.js CLI. <br>During the 3 days of this project, Vue components were used to create the page structure and manage the operating logic. <br>The props feature was also used to simulate data passing between components. <br>Additionally, Sass was used for managing styles and variables for different components, allowing for greater flexibility and maintainability of the code.",
+                "description": "The project involved developing a web page using the JavaScript framework Vue.js CLI.<br>During the 3 days of this project, Vue components were used to create the page structure and manage the operating logic.<br>The props feature was also used to simulate data passing between components.<br>Additionally, Sass was used for managing styles and variables for different components, allowing for greater flexibility and maintainability of the code.",
                 "tags": [
                     "JavaScript",
                     "Vue.js",
@@ -89,7 +91,7 @@
                 "imageName": "VueBoolZapp.png",
                 "visible": true,
                 "title": "BoolZapp",
-                "description": "BoolZapp is a messaging application inspired by WhatsApp, created with the JavaScript framework Vue.js. <br>Among its features, users can search for other users, open individual chats, send and receive simulated messages.",
+                "description": "BoolZapp is a messaging application inspired by WhatsApp, created with the JavaScript framework Vue.js.<br>Among its features, users can search for other users, open individual chats, send and receive simulated messages.",
                 "tags": [
                     "JavaScript",
                     "Vue.js",
@@ -103,7 +105,7 @@
                 "imageName": "DcComics.png",
                 "visible": true,
                 "title": "DcComics",
-                "description": "The project involved creating a website inspired by the official website of DC Comics, which focused on comics. <br>Vue.js was used to create the user interface and manage the site logic. <br>Data was passed to various tabs using props, a feature of Vue.js that allows for passing information between components dinamically.",
+                "description": "The project involved creating a website inspired by the official website of DC Comics, which focused on comics.<br>Vue.js was used to create the user interface and manage the site logic.<br>Data was passed to various tabs using props, a feature of Vue.js that allows for passing information between components dinamically.",
                 "tags": [
                     "JavaScript",
                     "Vue.js",
@@ -119,7 +121,7 @@
                 "title": "Dropbox",
                 "gitHubLink": "https://github.com/MatteoGenovese/htmlcss-dropbox",
                 "webSiteLink": "",
-                "description": "The project involved creating a static website inspired by the popular file storage and sharing service Dropbox. <br>HTML and CSS code was used to create a site with a similar design.",
+                "description": "The project involved creating a static website inspired by the popular file storage and sharing service Dropbox.<br>HTML and CSS code was used to create a site with a similar design.",
                 "tags": [
                     "Html+Css"
                 ]
@@ -129,7 +131,7 @@
                 "imageName": "Playstation.png",
                 "visible": true,
                 "title": "Playstation",
-                "description": "The project involved creating a static website inspired by the official website of the gaming platform PlayStation. <br>HTML and CSS code was used to create a site with a similar design.",
+                "description": "The project involved creating a static website inspired by the official website of the gaming platform PlayStation.<br>HTML and CSS code was used to create a site with a similar design.",
                 "tags": [
                     "Html+Css"
                 ],
@@ -142,7 +144,7 @@
                 "visible": true,
                 "title": "Discord",
                 "gitHubLink": "https://github.com/MatteoGenovese/htmlcss-discord",
-                "description": "Discord was one of the first projects in Boolean Careers. <br>The project involved creating a static website inspired by the popular online communication service Discord. <br>HTML and CSS code was used to create a site with a similar design.",
+                "description": "Discord was one of the first projects in Boolean Careers.<br>The project involved creating a static website inspired by the popular online communication service Discord.<br>HTML and CSS code was used to create a site with a similar design.",
                 "webSiteLink": "",
                 "tags": [
                     "Html+Css"
@@ -153,7 +155,7 @@
                 "imageName": "SpotifyStatic.png",
                 "visible": true,
                 "title": "Spotify Web",
-                "description": "Spotify Web is a static replica of the Spotify app, created with HTML and CSS. <br>It was one of the first projects that used these languages to create a user interface and includes small animations to emphasize the user experience.",
+                "description": "Spotify Web is a static replica of the Spotify app, created with HTML and CSS.<br>It was one of the first projects that used these languages to create a user interface and includes small animations to emphasize the user experience.",
                 "tags": [
                     "Html+Css"
                 ],

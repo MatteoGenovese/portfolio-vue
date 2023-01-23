@@ -16,9 +16,9 @@
             "second-word": "tecnologie",
             "third-word": "che conosco"
         },
-        "first-paragraph": "Utilizzo diversi <b>framework</b> per lo sviluppo di app: <ul><li>Spring per creare app in Java; </li><li>Laravel per app in PHP; </li> <li>Vue.js per interfacce utente interattive. </li></ul>Questi framework mi aiutano a creare soluzioni efficienti e scalabili.",
-        "second-paragraph": "Uso questi linguaggi per creare <b>soluzioni personalizzate</b>. Il mio background in Java mi permette di creare soluzioni per aziende, mentre PHP e JavaScript mi aiutano a creare soluzioni per il web.",
-        "third-paragraph": "Sviluppo <b>interfacce utente</b> utilizzando HTML, CSS, Sass e Bootstrap. Creo <b>layout responsivi</b> (adattabili ad ogni dispositivo) e utilizzo Sass e Bootstrap per lo styling delle interfacce utente.",
+        "first-paragraph": "Utilizzo diversi <b>framework</b> per lo sviluppo di app.<br>Questi framework servono a semplificare e velocizzare lo sviluppo, fornendo una base solida e standardizzata su cui costruire l'applicazione, nonché per garantire la compatibilità e la manutenibilità del codice.",
+        "second-paragraph": "I framework lasciano ancora molte opportunità per la <b>personalizzazione</b> e l'adattamento alle esigenze specifiche del progetto.<br>I linguaggi di programmazione vengono utilizzati per apportare queste personalizzazioni, scrivendo codice che si interfaccia con le librerie e gli strumenti forniti dal framework.",
+        "third-paragraph": "Sviluppo <b>interfacce utente</b> utilizzando HTML, CSS, Sass e Bootstrap. Creo <b>layout responsivi</b> (adattabili ad ogni dispositivo) e utilizzo Sass e Bootstrap per lo styling delle interfacce utente.<br>Insieme, questi strumenti vengono utilizzati per creare e personalizzare siti web e applicazioni.",
         "fourth-paragraph": "Sono in grado di creare, e <b>interagire con i database</b> attraverso query SQL e tramite Spring e Laravel che offrono un canale semplificato per la comunicazione con le basi di dati.<br>Utilizzo <b>Git</b> per il controllo delle versioni e <b>GitHub</b> per la collaborazione."
     },
     "my-projects": {
@@ -28,6 +28,8 @@
             "third-word": "progetti"
         },
         "found-message": {
+            "totals": "Totale",
+            "projects": "progetti",
             "found-result": "Trovati",
             "founds-results": "Trovato",
             "results": "risultati",

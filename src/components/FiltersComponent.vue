@@ -9,7 +9,7 @@
 
         <button v-else
                 type="button"
-                class="btn btn__custom mx-5 mb-4"
+                class="btn btn__custom"
                 @click="$emit('changeActive', tagIndex )">
             {{ tag.tag }}
         </button>
@@ -59,6 +59,7 @@ button.btn{
             scale: 1.1;
             transform: translateY(-0.3rem);
         }
+
     }
 
     &__custom{
@@ -66,16 +67,14 @@ button.btn{
         background-color: $secondary_color_light;
 
         &:hover{
-            color: $secondary_color_light;
-            background-color: $primary_color_light;
+            color: $primary_color_light;
+            background-color: $secondary_color_light;
             scale: 1.1;
             transform: translateY(-0.3rem);
         }
+
     }
 
-    &:active{
-        background-color: $secondary_color_light;
-        color: $primary_color_light;
-        }
+
 }
 </style>
