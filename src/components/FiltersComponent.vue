@@ -56,12 +56,12 @@ button.btn{
     font-size: $default-font-size;
 
     &__outline-custom{
-        color: $secondary_color_light;
-        background-color: $primary_color_light;
+        background-color: white;
+        color: black;
 
-        &:hover, &:active, &:visited{
-            color: $primary_color_light;
-            background-color: $secondary_color_light;
+        &:hover{
+            background-color: red;
+            color: green;
             scale: 1.1;
             transform: translateY(-0.3rem);
         }
@@ -69,12 +69,12 @@ button.btn{
     }
 
     &__custom{
-        color: $primary_color_light;
-        background-color: $secondary_color_light;
+        background-color: yellow;
+        color: blue;
 
-        &:hover, &:active, &:visited{
-            color: $primary_color_light;
-            background-color: $secondary_color_light;
+        &:hover{
+            background-color: green;
+            color: red;
             scale: 1.1;
             transform: translateY(-0.3rem);
         }
