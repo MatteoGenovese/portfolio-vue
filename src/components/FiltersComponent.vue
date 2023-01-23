@@ -47,7 +47,7 @@ export default {
 
 <style lang="scss">
 @import '../sass/app.scss';
-button{
+button.btn{
 
     transition: all 0.2s ease-out;
     box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: .3);
@@ -55,6 +55,10 @@ button{
     font-size: $default-font-size;
 
     &__outline-custom{
+
+        background-color: $primary_color_light;
+                color: $secondary_color_light;
+
             &:hover{
                 background-color: $secondary_color_light;
                 color: $primary_color_light;
