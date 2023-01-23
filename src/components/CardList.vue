@@ -13,7 +13,7 @@
         <div class="container">
 
             <div class="d-flex flex-wrap justify-content-center filtersComponent mb-5">
-                <FiltersComponent v-for="tag, index in tagToShow" :key="index" :tag="tag" :tagIndex="index"
+                <FiltersComponent v-for="(tag, index) in tagToShow" :key="index" :tag="tag" :tagIndex="index"
                     @changeActive="changeActive" />
             </div>
 
@@ -75,7 +75,10 @@ export default {
         },
 
         changeActive(tagIndex) {
-            this.tagToShow[tagIndex].active = !this.tagToShow[tagIndex].active;
+            if(this.tagToShow[tagIndex].active==0)
+                this.tagToShow[tagIndex].active = 1;
+            else
+                this.tagToShow[tagIndex].active = 0;
             this.filteringProject(tagIndex);
         },
 
