@@ -3,7 +3,7 @@
         <div class="cs-card">
 
             <div class="cs-card__front">
-                <img :src="require(`../assets/works/${work.imageName}`)" :alt="work.imageName" class="img-fluid">
+                <img :src="require(`../assets/works/${work.imageName}`)" :alt="work.imageName" class="">
             </div>
 
             <div class="cs-card__back d-flex flex-column justify-content-between">
@@ -97,6 +97,11 @@ export default {
 
 }
 
+img{
+    object-fit: cover;
+    width: 100%;
+}
+
 .wrapper {
     overflow: hidden;
     height: 50rem;
@@ -112,6 +117,8 @@ export default {
         height: 100%;
         width: 100%;
         text-align: center;
+
+
 
         &__tags {
             margin-top: 1.5rem;
@@ -145,6 +152,7 @@ export default {
             height: 100%;
             width: 100%;
             position: absolute;
+            overflow: scroll;
             transform: translateX(100%);
             padding: 3rem 3rem;
             background-color: $primary_color_light;
