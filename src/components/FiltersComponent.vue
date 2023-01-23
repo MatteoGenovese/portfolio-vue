@@ -58,30 +58,37 @@ button.btn{
     &__outline-custom{
         background-color: white;
         color: black;
-
-        &:hover{
-            background-color: red;
-            color: green;
-            scale: 1.1;
-            transform: translateY(-0.3rem);
-        }
-
     }
 
     &__custom{
         background-color: yellow;
         color: blue;
-
-        &:hover{
-            background-color: green;
-            color: red;
-            scale: 1.1;
-            transform: translateY(-0.3rem);
-        }
-
-
     }
 
 
 }
+
+@media (hover: hover) {
+    button.btn{
+        &__outline-custom{
+            &:hover{
+                background-color: red;
+                color: green;
+                scale: 1.1;
+                transform: translateY(-0.3rem);
+            }
+        }
+
+        &__custom{
+            &:hover{
+                background-color: green;
+                color: red;
+                scale: 1.1;
+                transform: translateY(-0.3rem);
+            }
+        }
+    }
+}
+
+
 </style>
