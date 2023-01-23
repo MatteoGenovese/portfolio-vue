@@ -2,8 +2,7 @@
     <div class="Filter mx-4 mb-4">
         <button 
                 type="button"
-                class="btn"
-                :class="!activeButton ? 'btn__outline-custom': 'btn__custom'"
+                class="btn btn__outline-custom"
                 @click="$emit('changeActive', tagIndex ), changeActive()">
             {{ tag.tag }}
         </button>
@@ -48,7 +47,7 @@ export default {
 
 <style lang="scss">
 @import '../sass/app.scss';
-button.btn{
+button{
 
     transition: all 0.2s ease-out;
     box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: .3);
@@ -56,38 +55,19 @@ button.btn{
     font-size: $default-font-size;
 
     &__outline-custom{
-        background-color: white;
-        color: black;
-    }
-
-    &__custom{
-        background-color: yellow;
-        color: blue;
-    }
-
-
-}
-
-@media (hover: hover) {
-    button.btn{
-        &__outline-custom{
             &:hover{
-                background-color: red;
-                color: green;
+                background-color: $secondary_color_light;
+                color: $primary_color_light;
                 scale: 1.1;
                 transform: translateY(-0.3rem);
             }
-        }
-
-        &__custom{
-            &:hover{
-                background-color: green;
-                color: red;
+            &:active{
+                background-color: $secondary_color_light;
+                color: $primary_color_light;
                 scale: 1.1;
                 transform: translateY(-0.3rem);
             }
-        }
-    }
+    }      
 }
 
 
