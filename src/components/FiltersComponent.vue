@@ -1,18 +1,19 @@
 <template>
     <div class="Filter mx-4 mb-4">
-        <button v-if="!tag.active"
+        <button 
                 type="button"
-                class="btn btn__outline-custom"
+                class="btn"
+                :class="!activeButton ? 'btn__outline-custom': 'btn__custom'"
                 @click="$emit('changeActive', tagIndex ), activeButton=!activeButton">
             {{ tag.tag }}
         </button>
 
-        <button v-else
+        <!-- <button v-else
                 type="button"
                 class="btn btn__custom"
                 @click="$emit('changeActive', tagIndex ), activeButton=!activeButton">
             {{ tag.tag }}
-        </button>
+        </button> -->
     </div>
 </template>
 
