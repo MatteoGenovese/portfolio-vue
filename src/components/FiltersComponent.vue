@@ -4,7 +4,7 @@
                 type="button"
                 class="btn"
                 :class="!activeButton ? 'btn__outline-custom': 'btn__custom'"
-                @click="$emit('changeActive', tagIndex ), activeButton=!activeButton">
+                @click="$emit('changeActive', tagIndex ), changeActive()">
             {{ tag.tag }}
         </button>
 
@@ -22,7 +22,12 @@
 export default {
     // name: 'FiltersComponent',
     components: {    },
-    methods: {    },
+    methods: {   
+        changeActive (){
+            this.activeButton=!this.activeButton;
+            // console.log(this.activeButton);
+        }
+     },
     props:{
         tag:{
             require:true,
@@ -35,7 +40,7 @@ export default {
     },
     data: function () {
         return {
-            activeButton: 0,
+            activeButton: false,
         }
     }
 }

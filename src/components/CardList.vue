@@ -68,18 +68,16 @@ export default {
             this.searchTags.forEach(tag => {
                 this.tagToShow.push({
                     'tag': tag,
-                    'active': 0
+                    'active': false
                 });
             });
             this.searchTags = [];
         },
 
         changeActive(tagIndex) {
-            if(this.tagToShow[tagIndex].active==0)
-                this.tagToShow[tagIndex].active = 1;
-            else
-                this.tagToShow[tagIndex].active = 0;
+            this.tagToShow[tagIndex].active=!this.tagToShow[tagIndex].active;
             this.filteringProject(tagIndex);
+            // console.log(this.tagToShow[0].active);
         },
 
         checkIfFilterIsActive() {
@@ -103,6 +101,8 @@ export default {
                 if (tag.active)
                     return true;
             })
+
+            console.log(this.filteredTag , this.tagToShow)
             if (this.checkIfFilterIsActive()) {
                 this.worksFiltered = [];
                 this.$t("my-projects.works").forEach(work => {
