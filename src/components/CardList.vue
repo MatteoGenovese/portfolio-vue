@@ -17,6 +17,11 @@
                     @changeActive="changeActive" />
             </div>
 
+            <div v-if="!checkIfFilterIsActive()" class="mb-5 text-center"> 
+                {{ $t('my-projects.found-message.totals') }} : 
+                {{ $t("my-projects.works").length }}                 
+                {{ $t('my-projects.found-message.projects') }}
+            </div>
             <div v-if="worksFiltered.length > 1 && checkIfFilterIsActive()" class="mb-5 text-center"> 
                 {{ $t('my-projects.found-message.found-results') }} : 
                 {{ worksFiltered.length }}                 
@@ -117,10 +122,10 @@ export default {
             lang: this.$store.state.lang,
             filteredTag: [],
             searchTags: [
-                'Spring',
+                // 'Spring',
+                // 'Java',
                 'Laravel',
                 'Vue.js',
-                'Java',
                 'PHP',
                 'JavaScript',
                 'Axios',
