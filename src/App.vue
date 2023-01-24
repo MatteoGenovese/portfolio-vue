@@ -5,7 +5,7 @@
 </template>
 
 <style lang="scss">
-@import './sass/app.scss';
+@import './sass/portfolio/app.scss';
 
 *,
 *::after,

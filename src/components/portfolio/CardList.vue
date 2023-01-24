@@ -46,8 +46,8 @@
 
 <script>
 
-import SingleCard from '@/components/SingleCard.vue'
-import FiltersComponent from '@/components/FiltersComponent.vue'
+import SingleCard from '@/components/portfolio/SingleCard.vue'
+import FiltersComponent from '@/components/portfolio/FiltersComponent.vue'
 
 
 export default {

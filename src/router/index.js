@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomePortfolio from '../views/HomePortfolio.vue'
+import HomePortfolio from '../views/portfolio/HomePortfolio.vue'
 // import ComingSoonComponent from '../views/ComingSoonComponent.vue'
 import i18n from '../i18n'
 

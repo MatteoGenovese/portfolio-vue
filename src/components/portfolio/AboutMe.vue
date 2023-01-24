@@ -44,7 +44,7 @@
         <div class="col-lg-4 col-12 profile-photo mb-lg-0 mb-5" data-aos="fade-right">
             <div class="d-flex justify-content-center  profile-photo__clip mb-4 m-lg-3">
                 <!-- <img :src="require(`../assets/FotoLinkedin.jpeg`)" alt="" class="profile-photo-clip"> -->
-                <img src="../assets/FotoLinkedin.png" alt="" class="w-100">
+                <img src="../../assets/portfolio/FotoLinkedin.png" alt="" class="w-100">
 
             </div>
             <ContactMe />

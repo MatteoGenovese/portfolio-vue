@@ -3,7 +3,7 @@
         <div class="cs-card">
 
             <div class="cs-card__front">
-                <img :src="require(`../assets/works/${work.imageName}`)" :alt="work.imageName" class="">
+                <img :src="require(`../../assets/portfolio/works/${work.imageName}`)" :alt="work.imageName" class="">
             </div>
 
             <div class="cs-card__back d-flex flex-column justify-content-between">
@@ -62,7 +62,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../sass/app.scss';
+@import '../../sass/portfolio/app.scss';
 
 @media (hover: hover) {
     .wrapper {

@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style lang="scss">
-    @import '../sass/app.scss';
+@import '../../sass/portfolio/app.scss';
     .scroll-indicator {
         position: absolute;
         opacity: 30%;

@@ -19,13 +19,13 @@
 
 <script>
 
-import HeaderComponent from '@/components/HeaderComponent.vue'
-import HomeJumbotron from '@/components/HomeJumbotron.vue'
-import CoreTechnologies from '@/components/CoreTechnologies.vue'
-import AboutMe from '@/components/AboutMe.vue'
-import MyProjects from '@/components/MyProjects.vue'
-import FooterComponent from '@/components/FooterComponent.vue'
-import LanguageSwitcher from '@/components/LanguageSwitcher.vue'
+import HeaderComponent from '@/components/portfolio/HeaderComponent.vue'
+import HomeJumbotron from '@/components/portfolio/HomeJumbotron.vue'
+import CoreTechnologies from '@/components/portfolio/CoreTechnologies.vue'
+import AboutMe from '@/components/portfolio/AboutMe.vue'
+import MyProjects from '@/components/portfolio/MyProjects.vue'
+import FooterComponent from '@/components/portfolio/FooterComponent.vue'
+import LanguageSwitcher from '@/components/portfolio/LanguageSwitcher.vue'
 
 export default {
   name: 'HomePortfolio',
@@ -49,7 +49,7 @@ export default {
 
 <style lang="scss">
 
-@import '../sass/app.scss';
+@import '../../sass/portfolio/app.scss';
 
 p,
 div,

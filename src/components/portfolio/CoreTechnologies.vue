@@ -14,7 +14,7 @@
         <div class="col-md-6 col-12 g-5">
             <div data-aos="fade-right" class="technology-card">
                 <div class="technology-card__image w-100 justify-content-center align-content-center d-flex align-self-center ">
-                    <img src="../assets/frameworks.png" class="w-75 align-items-center">
+                    <img src="../../assets/portfolio/frameworks.png" class="w-75 align-items-center">
                 </div>
                 <div class="technology-card__description">
                     <p class="text-justify" v-html="$t('core-technologies.first-paragraph')">
@@ -26,7 +26,7 @@
         <div class="col-md-6 col-12 g-5">
             <div data-aos="fade-right" class="technology-card">
                 <div class="technology-card__image w-100 justify-content-center align-content-center d-flex align-self-center ">
-                    <img src="../assets/languages.png" class="w-75 align-items-center">
+                    <img src="../../assets/portfolio/languages.png" class="w-75 align-items-center">
                 </div>
                 <div class="technology-card__description">
                     <p class="text-justify" v-html="$t('core-technologies.second-paragraph')">
@@ -38,7 +38,7 @@
         <div class="col-md-6 col-12 g-5">
             <div data-aos="fade-right" class="technology-card">
                 <div class="technology-card__image w-100 justify-content-center align-content-center d-flex align-self-center ">
-                    <img src="../assets/markupAndStyle.png" class="w-75 align-items-center">
+                    <img src="../../assets/portfolio/markupAndStyle.png" class="w-75 align-items-center">
                 </div>
                 <div class="technology-card__description">
                     <p class="text-justify" v-html="$t('core-technologies.third-paragraph')">
@@ -50,7 +50,7 @@
         <div class="col-md-6 col-12 g-5">
             <div data-aos="fade-right" class="technology-card">
                 <div class="technology-card__image w-100 justify-content-center align-content-center d-flex align-self-center ">
-                    <img src="../assets/db.png" class="w-75 align-items-center">
+                    <img src="../../assets/portfolio/db.png" class="w-75 align-items-center">
                 </div>
                 <div class="technology-card__description">
                     <p class="text-justify" v-html="$t('core-technologies.fourth-paragraph')">
@@ -72,7 +72,7 @@ export default {
 </script>
 <style lang="scss">
 
-@import '../sass/app.scss';
+@import '../../sass/portfolio/app.scss';
 
 #CoreTechnologies{
     min-height: 20rem;

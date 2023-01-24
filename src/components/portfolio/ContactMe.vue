@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../sass/app.scss';
+@import '../../sass/portfolio/app.scss';
 
 .contact-me{
 

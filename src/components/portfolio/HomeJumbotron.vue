@@ -18,7 +18,7 @@
 
 
 <script>
-import ScrollAnimation from '@/components/ScrollAnimation.vue'
+import ScrollAnimation from '@/components/portfolio/ScrollAnimation.vue'
 
 export default {
   name: 'HomePortfolio',
@@ -30,6 +30,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../../sass/portfolio/app.scss';
+
 #jumbotron {
     background-size: cover;
     background-position: center;
@@ -37,7 +39,7 @@ export default {
                         to right bottom,
                         rgba(#0F2027, 0.9),
                         rgba(#1CB5E0, 0.9)),
-                        url(../assets/jumbotron.jpg);
+                        url(../../assets/portfolio/jumbotron.jpg);
     width: 100%;
     object-fit: cover;
     height: calc(100vh);

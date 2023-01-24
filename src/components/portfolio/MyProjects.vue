@@ -7,8 +7,8 @@
 
 <script>
 
-import CardList from '@/components/CardList.vue'
-import FiltersComponent from '@/components/FiltersComponent.vue'
+import CardList from '@/components/portfolio/CardList.vue'
+import FiltersComponent from '@/components/portfolio/FiltersComponent.vue'
 
 export default {
     name: 'MyProjects',

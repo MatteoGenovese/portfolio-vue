@@ -61,7 +61,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../sass/app.scss';
+@import '../../sass/portfolio/app.scss';
 
 .select-language{
     z-index: 10;

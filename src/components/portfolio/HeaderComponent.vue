@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../sass/app.scss';
+@import '../../sass/portfolio/app.scss';
 $primary-color-blue: #457B9D ;
 a.navbar-brand{
     background-color: var($primary-color-blue) !important;
