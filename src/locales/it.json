@@ -60,7 +60,7 @@
                 "visible": true,
                 "title": "BoolFlix",
                 "gitHubLink": "https://github.com/MatteoGenovese/vue-boolflix",
-                "webSiteLink": "/boolflix",
+                "webSiteLink": "",
                 "description": "BoolFlix è un sito simile a Netflix. <br> Gli utenti possono cercare film e serie TV utilizzando una stringa di ricerca, ma i risultati non sono riproducibili e forniscono invece informazioni sui contenuti sotto forma di schede che ruotano. <br>Quando l'utente accede al sito o la barra di ricerca è vuota, vengono visualizzati i contenuti più popolari. <br>BoolFlix utilizza l'API di themoviedb.org per ottenere informazioni sui film e le serie TV.",
                 "tags": [
                     "JavaScript",
