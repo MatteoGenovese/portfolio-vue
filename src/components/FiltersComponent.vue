@@ -1,10 +1,7 @@
 <template>
     <div class="Filter mx-4 mb-4">
-        <button 
-                type="button"
-                class="btn btn__outline-custom"
-                :class="activeButton ? 'btn__outline-custom--active' : ''"
-                @click="$emit('changeActive', tagIndex ), changeActive()">
+        <button type="button" class="cs-btn" :class="activeButton ? 'cs-btn__outline-custom--active' : 'cs-btn__outline-custom'"
+            @click="$emit('changeActive', tagIndex), changeActive()">
             {{ tag.tag }}
         </button>
 
@@ -21,21 +18,21 @@
 
 export default {
     // name: 'FiltersComponent',
-    components: {    },
-    methods: {   
-        changeActive (){
-            this.activeButton=!this.activeButton;
+    components: {},
+    methods: {
+        changeActive() {
+            this.activeButton = !this.activeButton;
             // console.log(this.activeButton);
         }
-     },
-    props:{
-        tag:{
-            require:true,
-            type:Object
+    },
+    props: {
+        tag: {
+            require: true,
+            type: Object
         },
-        tagIndex:{
-            require:true,
-            type:Number
+        tagIndex: {
+            require: true,
+            type: Number
         }
     },
     data: function () {
@@ -48,40 +45,36 @@ export default {
 
 <style lang="scss">
 @import '../sass/app.scss';
-button.btn{
+
+button.cs-btn {
 
     transition: all 0.2s ease-out;
     box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: .3);
     border: 1px solid rgba($secondary_color_light, 0.8);
     font-size: $default-font-size;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
 
-    &__outline-custom{
+    &__outline-custom {
 
         background-color: $primary_color_light;
-                color: $secondary_color_light;
+        color: $secondary_color_light;
 
-
-                @media (hover: hover) {
-                    &:hover{
+        @media (hover: hover) {
+            &:hover {
                 background-color: $secondary_color_light;
                 color: $primary_color_light;
                 scale: 1.1;
                 transform: translateY(-0.3rem);
             }
+        }
 
-                }
-
-
-
-
-            &--active{
-                background-color: $secondary_color_light;
-                color: $primary_color_light;
-                scale: 1.1;
-                transform: translateY(-0.3rem);
-            }
-    }      
+        &--active {
+            background-color: $secondary_color_light;
+            color: $primary_color_light;
+            scale: 1.1;
+            transform: translateY(-0.3rem);
+        }
+    }
 }
-
-
 </style>
