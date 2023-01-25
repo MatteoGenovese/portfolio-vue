@@ -1,5 +1,5 @@
 <template>
-    <div v-if="work.visible" class="wrapper " @click="cardToggle()" :class="isFrontActive ? ' active' : ' back'">
+    <div v-if="work.visible" class="cs-wrapper " @click="cardToggle()" :class="isFrontActive ? ' active' : ' back'">
         <div class="cs-card">
 
             <div class="cs-card__front">
@@ -61,50 +61,17 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '../../sass/portfolio/app.scss';
 
-@media (hover: hover) {
-    .wrapper {
-        &:hover {
-            transition: all .8s ease;
-        }
-
-        &:hover .cs-card__front {
-            opacity: 0;
-            transform: translateX(-100%);
-        }
-
-        &:hover .cs-card__back {
-            opacity: 1;
-            transform: translateX(0%);
-        }
-    }
-}
-
-@media (hover: none) {
-    .wrapper {
-        &.back .cs-card__front {
-            opacity: 0;
-            transform: translateX(-100%);
-        }
-
-        &.back .cs-card__back {
-            opacity: 1;
-            transform: translateX(0%);
-        }
-    }
-
-}
 
 img{
     object-fit: cover;
     width: 100%;
 }
 
-.wrapper {
+.cs-wrapper {
     overflow: hidden;
-    height: 50rem;
     width: 100%;
     position: relative;
     border-radius: 1rem;
@@ -127,17 +94,15 @@ img{
         }
 
         &__title {
-            background-image: linear-gradient(to right bottom,
-                    rgba(#0F2027, 0.9),
-                    rgba(#1CB5E0, 0.9));
+            background-image: $primary_gradient;
             border-radius: 1rem;
             padding: 1rem 0;
             vertical-align: middle;
+            margin-bottom: 3rem;
             color: $primary_color_light;
         }
 
         &__description {
-            margin-top: 1.5rem;
             text-align: justify;
         }
 
@@ -158,6 +123,50 @@ img{
             background-color: $primary_color_light;
         }
     }
+}
+@media (hover: hover) {
+    .cs-wrapper {
+        height: 35rem;
+        &:hover {
+            transition: all .8s ease;
+        }
+
+        &:hover .cs-card__front {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+
+        &:hover .cs-card__back {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+        .cs-card {
+            &__back {
+                padding: 2rem 2rem;
+            }
+        }
+    }
+}
+
+@media (hover: none) {
+    .cs-wrapper {
+        height: 30rem;
+        &.back .cs-card__front {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+
+        &.back .cs-card__back {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+        .cs-card {
+            &__back {
+                padding: 1rem 1rem;
+            }
+        }
+    }
+
 }
 
 

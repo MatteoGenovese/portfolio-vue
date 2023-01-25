@@ -70,7 +70,7 @@ export default {
 
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 
 @import '../../sass/portfolio/app.scss';
 
@@ -81,10 +81,7 @@ export default {
 .technology-card{
 
     padding: 3rem;
-    background-image: linear-gradient(
-                to right bottom,
-                rgba($primary_color_light, 0.7),
-                rgba($secondary_color_light, 0.7));
+    background-image: $secondary_gradient;
     border-radius: 1rem;
     height: 100%;
     display: flex;
@@ -100,8 +97,8 @@ export default {
     &__image {
         width: 100%;
         img {
-            height: 15rem;
             object-fit: contain;
+            margin-bottom: 3rem;
         }
 
     }

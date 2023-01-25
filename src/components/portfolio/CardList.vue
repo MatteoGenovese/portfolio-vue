@@ -1,7 +1,7 @@
 <template>
     <div id="CardList">
 
-        <div class=" d-flex justify-content-center">
+        <div class=" d-flex justify-content-center mb-5">
             <h1>                        
                 {{ $t('my-projects.title-composition.first-word') }} 
                 {{ $t('my-projects.title-composition.second-word') }} 
@@ -12,28 +12,28 @@
         </div>
         <div class="container">
 
-            <div class="d-flex flex-wrap justify-content-center filtersComponent mb-5">
+            <div class="d-flex flex-wrap justify-content-center filtersComponent mb-3">
                 <FiltersComponent v-for="(tag, index) in tagToShow" :key="index" :tag="tag" :tagIndex="index"
                     @changeActive="changeActive" />
             </div>
 
-            <div v-if="!checkIfFilterIsActive()" class="mb-5 text-center"> 
+            <div v-if="!checkIfFilterIsActive()" class="mb-3 text-center"> 
                 {{ $t('my-projects.found-message.totals') }} : 
                 {{ $t("my-projects.works").length }}                 
                 {{ $t('my-projects.found-message.projects') }}
             </div>
-            <div v-if="worksFiltered.length > 1 && checkIfFilterIsActive()" class="mb-5 text-center"> 
+            <div v-if="worksFiltered.length > 1 && checkIfFilterIsActive()" class="mb-3 text-center"> 
                 {{ $t('my-projects.found-message.found-results') }} : 
                 {{ worksFiltered.length }}                 
                 {{ $t('my-projects.found-message.results') }}
             </div>
-            <div v-if="worksFiltered.length == 1 && checkIfFilterIsActive()" class="mb-5 text-center">
+            <div v-if="worksFiltered.length == 1 && checkIfFilterIsActive()" class="mb-3 text-center">
                 {{ $t('my-projects.found-message.found-result') }} : 
                 {{ worksFiltered.length }}                 
                 {{ $t('my-projects.found-message.result') }}
             </div>
 
-            <div class="row cardList g-5">
+            <div class="row cardList g-3">
                 <div class="col-12 col-lg-6 g-5" v-for="work, index in worksFiltered" :key="index">
                     <SingleCard :work="work" />
                 </div>
@@ -148,9 +148,10 @@ export default {
 }
 </script>
 
-<style lang="scss" >
+<style lang="scss" scoped>
+@import '../../sass/portfolio/app.scss';
+
 .filtersComponent,
 .cardList {
-    margin-top: 3rem;
 }
 </style>

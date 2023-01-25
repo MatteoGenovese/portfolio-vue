@@ -26,7 +26,9 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+@import '../../sass/portfolio/app.scss';
+
 #FooterComponent {
     height: 10rem;
     background-color: #0F2027;

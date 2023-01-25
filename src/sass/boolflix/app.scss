@@ -1,10 +1,8 @@
 @import "~bootstrap/scss/bootstrap.scss";
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
 // Variables
-@import './variables';
+@import './_variables';
 //base
-@import './base';
+@import './_base';
 // flag-icons
 @import "/node_modules/flag-icons/css/flag-icons.min.css";
 // Font-Awesome

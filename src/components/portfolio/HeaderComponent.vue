@@ -23,7 +23,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '../../sass/portfolio/app.scss';
 $primary-color-blue: #457B9D ;
 a.navbar-brand{

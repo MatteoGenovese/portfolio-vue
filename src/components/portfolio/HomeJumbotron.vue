@@ -29,22 +29,18 @@ export default {
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '../../sass/portfolio/app.scss';
 
 #jumbotron {
     background-size: cover;
     background-position: center;
-    background-image:linear-gradient(
-                        to right bottom,
-                        rgba(#0F2027, 0.9),
-                        rgba(#1CB5E0, 0.9)),
+    background-image:$primary_gradient,
                         url(../../assets/portfolio/jumbotron.jpg);
     width: 100%;
     object-fit: cover;
     height: calc(100vh);
     p, h1, h2{
-        font-size: 3rem;
         color: #eeeeee;
     }
 

@@ -4,24 +4,7 @@
   </div>
 </template>
 
-<style lang="scss">
-@import './sass/portfolio/app.scss';
-
-*,
-*::after,
-*::before{             /*::after,*::before perchè * non copre questi pseudo elementi*/
-	margin: 0;
-	padding: 0;
-	box-sizing: inherit; /*eredita tutto ciò che viene messo nel box sizing del body*/
-}
-
-
-html{
-	font-size: 62.5%;
-}
-
-body{
-	box-sizing: border-box;
-}
+<style lang="scss" scoped>
+  @import "~bootstrap/scss/bootstrap.scss";
 
 </style>
