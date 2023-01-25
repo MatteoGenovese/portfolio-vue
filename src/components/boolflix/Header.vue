@@ -134,6 +134,8 @@ header {
     padding-left: 1rem;
     padding-bottom: 1rem;
     display: flex;
+
+
     
 
 
@@ -145,7 +147,7 @@ header {
 
       }
     button{
-
+      color: black;
       padding: 0.5px 10px;
       border-radius: 6px;
       
