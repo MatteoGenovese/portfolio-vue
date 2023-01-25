@@ -123,7 +123,7 @@ export default {
 @import "../../sass/boolflix/app.scss";
 
 
-$card_width: 300px;
+$card_width: 230px;
 $card_height: calc($card_width * 1.5);
 
 // https://www.w3schools.com/howto/howto_css_flip_card.asp card flip documentation

@@ -4,13 +4,15 @@
       BOOLFLIX
     </div> -->
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark text-white" data-bs-theme="dark">
       <div class="container-fluid">
         <div class=" navbar-brand logo">
               BOOLFLIX
         </div>
         <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -50,8 +52,8 @@
     </nav> -->
 
     <div class="search-bar bg-dark ">
-      <button @click="$emit('search', inputText.trim())">Invio</button>
-      <input type="text" v-model="inputText" @keyup.enter="$emit('search', inputText.trim())">
+      <button @click="$emit('search', inputText.trim())">Cerca</button>
+      <input type="text" placeholder="  Cerca un film o una serie tv..." v-model="inputText" @keyup.enter="$emit('search', inputText.trim())">
     </div>
 
   </header>
@@ -92,6 +94,10 @@ export default {
     color: white;
   }
 
+  .navbar-toggler-icon{
+    color: white !important;
+  }
+
 header {
   color: white;
   // height: 4rem;
@@ -128,6 +134,8 @@ header {
     padding-left: 1rem;
     padding-bottom: 1rem;
     display: flex;
+    
+
 
     input{
       max-width: 25rem;
