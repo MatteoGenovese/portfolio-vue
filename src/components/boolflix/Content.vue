@@ -133,6 +133,16 @@ $card_height: calc($card_width * 1.5);
     background-color: transparent;
     min-width: $card_width;
     height: $card_height;
+    @include respond(phone) { 
+        $card_width: 80vw;
+        $card_height: calc($card_width * 1.5);
+
+        width: $card_width;
+        height: $card_height;
+        margin: 0 auto;
+    }
+
+
     perspective: 1000px;
     flex-grow: 1;
     /* Remove this if you don't want the 3D effect */
