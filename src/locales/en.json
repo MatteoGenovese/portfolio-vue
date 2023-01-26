@@ -60,7 +60,7 @@
                 "visible": true,
                 "title": "BoolFlix",
                 "gitHubLink": "https://github.com/MatteoGenovese/vue-boolflix",
-                "webSiteLink": "/boolflix/",
+                "webSiteLink": "",
                 "description": "BoolFlix is a site similar to Netflix.<br>Users can search for movies and TV shows using a search string, but the results are not playable and instead provide information about the content in the form of rotating cards.<br>When the user accesses the site or the search bar is empty, the most popular content is displayed.<br>BoolFlix uses the API of themoviedb.org to get information about movies and TV shows.",
                 "tags": [
                     "JavaScript",
