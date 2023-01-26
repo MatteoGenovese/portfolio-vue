@@ -27,10 +27,11 @@ export default {
 .contact-me {
     font-weight: bolder;
     .icon {
-        font-size: 2rem;
-        // margin-right: 1rem;
-
+        font-size: 1rem;
         &>* {
+            @include respond(phone) { 
+                font-size: 300%; 
+            }
             background-image: $primary_gradient;
             -webkit-background-clip: text;
             color: transparent;

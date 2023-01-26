@@ -56,6 +56,9 @@ section {
     section {
         &:not(:last-child) {
             padding: 5rem 2rem;
+            @include respond(phone) {
+                padding: 1.5rem 0rem;
+            }
         }
         &:last-child {
             padding-top: 0rem;

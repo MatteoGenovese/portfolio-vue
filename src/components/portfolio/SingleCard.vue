@@ -87,10 +87,13 @@ img{
 
 
 
+
         &__tags {
             margin-top: 1.5rem;
             text-align: center;
-            font-size: 1.2rem;
+            @include respond(phone) { 
+                font-size: 60%; 
+            }
         }
 
         &__title {

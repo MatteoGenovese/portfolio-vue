@@ -40,8 +40,22 @@ export default {
     width: 100%;
     object-fit: cover;
     height: calc(100vh);
+    
+    p{
+        @include respond(phone) { 
+            font-size: 90%;        
+        }
+    }
+    h2{
+        @include respond(phone) { 
+            font-size: 120%;        
+        }
+    }
     p, h1, h2{
         color: #eeeeee;
+        @include respond(phone) { 
+            padding: 1rem 2rem;
+        }
     }
 
     .presentation{

@@ -22,11 +22,15 @@ export default {
 
 .github-profile {
     font-weight: bold;
+
     .icon {
         font-size: 1rem;
         margin-right: 1rem;
 
         &>* {
+            @include respond(phone) { 
+                font-size: 300%; 
+            }
             background-image: $primary_gradient;
             -webkit-background-clip: text;
             color: transparent;

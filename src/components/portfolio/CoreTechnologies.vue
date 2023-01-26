@@ -81,6 +81,9 @@ export default {
 .technology-card{
 
     padding: 3rem;
+    @include respond(phone) { 
+            padding: 1.5rem;
+        }
     background-image: $secondary_gradient;
     border-radius: 1rem;
     height: 100%;

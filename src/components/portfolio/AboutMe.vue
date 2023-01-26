@@ -101,6 +101,11 @@ export default {
         .icon {
             font-size: 3rem;
             margin-right: 3rem;
+            @include respond(phone) { 
+                margin-right: 0;
+                margin-bottom: -1rem;
+                
+            }
             &>* {
                 background-image: $primary_gradient;
                 -webkit-background-clip: text;
@@ -118,6 +123,9 @@ export default {
             img{
                 max-width: 30rem;
                 border-radius: 50%;
+                @include respond(phone) { 
+                    margin-bottom: 2rem;
+                }
             }
         }
     }

@@ -1,5 +1,5 @@
 <template>
-    <div class="Filter mx-4 mb-4">
+    <div class="filter ">
         <button type="button" class="cs-btn" :class="activeButton ? 'cs-btn__outline-custom--active' : 'cs-btn__outline-custom'"
             @click="$emit('changeActive', tagIndex), changeActive()">
             {{ tag.tag }}
@@ -46,34 +46,48 @@ export default {
 <style lang="scss" scoped>
 @import '../../sass/portfolio/app.scss';
 
-button.cs-btn {
+.filter{
 
-    transition: all 0.2s ease-out;
-    box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: .3);
-    border: 1px solid rgba($secondary_color_light, 0.8);
-    font-size: $default-font-size;
-    padding: .5rem 1rem;
-    border-radius: .5rem;
+    padding: 0.5rem 1rem;
+    @include respond(phone) { 
+        padding: 0.2rem 0.5rem;
+    }
+    
 
-    &__outline-custom {
 
-        background-color: $primary_color_light;
-        color: $secondary_color_light;
+    button.cs-btn {
 
-        @media (hover: hover) {
-            &:hover {
+        transition: all 0.2s ease-out;
+        box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: .3);
+        border: 1px solid rgba($secondary_color_light, 0.8);
+        font-size: $default-font-size;
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+
+        @include respond(phone) { 
+            padding: 0.2rem 0.5rem;
+        }
+
+        &__outline-custom {
+
+            background-color: $primary_color_light;
+            color: $secondary_color_light;
+
+            @media (hover: hover) {
+                &:hover {
+                    background-color: $secondary_color_light;
+                    color: $primary_color_light;
+                    scale: 1.1;
+                    transform: translateY(-0.3rem);
+                }
+            }
+
+            &--active {
                 background-color: $secondary_color_light;
                 color: $primary_color_light;
                 scale: 1.1;
                 transform: translateY(-0.3rem);
             }
-        }
-
-        &--active {
-            background-color: $secondary_color_light;
-            color: $primary_color_light;
-            scale: 1.1;
-            transform: translateY(-0.3rem);
         }
     }
 }

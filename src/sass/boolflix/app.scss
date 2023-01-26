@@ -1,6 +1,8 @@
 @import "~bootstrap/scss/bootstrap.scss";
 // Variables
 @import './_variables';
+//mixins
+@import './mixins';
 //base
 @import './_base';
 // flag-icons
