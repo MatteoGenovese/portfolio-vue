@@ -21,31 +21,33 @@ export default {
 
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 @import '../../sass/portfolio/app.scss';
-
-.contact-me {
-    font-weight: bolder;
-    .icon {
-        font-size: 1rem;
-        &>* {
-            @include respond(phone) { 
-                font-size: 300%; 
+.portfolio{
+    .contact-me {
+        font-size: $default-font-size;
+        font-weight: bolder;
+        .icon {
+            font-size: 1.5rem;
+            &>* {
+                @include respond(phone) { 
+                    font-size: 300%; 
+                }
+                background-image: $primary_gradient;
+                -webkit-background-clip: text;
+                color: transparent;
             }
-            background-image: $primary_gradient;
-            -webkit-background-clip: text;
-            color: transparent;
+        }
+
+        &__text {
+            font-weight: bolder;
         }
     }
-
-    &__text {
-        font-weight: bolder;
+    .fa-linkedin {
+        font-size: 4rem;
     }
-}
-.fa-linkedin {
-    font-size: 4rem;
-}
-.fa-square-envelope {
-    font-size: 4rem;
+    .fa-square-envelope {
+        font-size: 4rem;
+    }
 }
 </style>

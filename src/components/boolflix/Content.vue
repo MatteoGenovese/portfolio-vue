@@ -43,13 +43,13 @@
                         </li>
                         <!-- case: information in common -->
                         <li>Lingua: 
+                            
+                                <country-flag  v-if="content.original_language === 'en'" :country='"gb"' size='small'  class="country-flag"/>
 
-                                <country-flag  v-if="content.original_language === 'en'" :country='"gb"' size='small' />
+                                <country-flag v-if="content.original_language === 'ja'" :country='"jp"' size='small' class="country-flag"/>
 
+                                <country-flag  v-if="content.original_language != 'en' && content.original_language != 'ja'" :country='content.original_language' size='small' class="country-flag"/>
 
-                                <country-flag v-if="content.original_language === 'ja'" :country='"jp"' size='small' />
-
-                                <country-flag  v-if="content.original_language != 'en' && content.original_language != 'ja'" :country='content.original_language' size='small' />
                             <span>{{ content.original_language.toUpperCase() }}</span>
                         </li>
                         <li>
@@ -119,9 +119,10 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 @import "../../sass/boolflix/app.scss";
 
+.boolflix{
 
 $card_width: 230px;
 $card_height: calc($card_width * 1.5);
@@ -133,8 +134,9 @@ $card_height: calc($card_width * 1.5);
     background-color: transparent;
     min-width: $card_width;
     height: $card_height;
+    font-size: 1.6rem;
     @include respond(phone) { 
-        $card_width: 80vw;
+        $card_width: 260px;
         $card_height: calc($card_width * 1.5);
 
         width: $card_width;
@@ -178,7 +180,12 @@ $card_height: calc($card_width * 1.5);
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
+
+
     
+    .country-flag{
+        flex-grow: 0;
+    }
     img{
         width: 100%;
         object-fit: cover;
@@ -193,7 +200,7 @@ $card_height: calc($card_width * 1.5);
         display: none;
     }
     &__title{
-        font-size: 1rem;
+        font-size: 1.4rem;
         font-weight: bold;
     }
 }
@@ -217,10 +224,14 @@ $card_height: calc($card_width * 1.5);
     display: flex;
     align-items: flex-start;
     overflow: auto;
-    font-size: 0.7rem;
+    font-size: 1.2rem;
     text-align: left;
     text-justify: inter-word;
     padding: 1rem;
+
+    .country-flag{
+
+    }
 
     ul {
         display: flex;
@@ -235,5 +246,6 @@ $card_height: calc($card_width * 1.5);
             padding-top: 10px;
         }
     }
+}
 }
 </style>

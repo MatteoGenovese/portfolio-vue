@@ -29,9 +29,10 @@ export default {
 
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 @import '../../sass/portfolio/app.scss';
 
+.portfolio{
 #jumbotron {
     background-size: cover;
     background-position: center;
@@ -42,14 +43,15 @@ export default {
     height: calc(100vh);
     
     p{
-        @include respond(phone) { 
-            font-size: 90%;        
-        }
+        font-size: $default-font-size;
+        // @include respond(phone) { 
+        //     font-size: 90%;        
+        // }
     }
     h2{
-        @include respond(phone) { 
-            font-size: 120%;        
-        }
+        // @include respond(phone) { 
+        //     font-size: 100%;        
+        // }
     }
     p, h1, h2{
         color: #eeeeee;
@@ -62,6 +64,6 @@ export default {
         text-align: start;
     }
 }
-
+}
 
 </style>>

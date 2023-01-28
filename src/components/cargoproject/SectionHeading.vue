@@ -31,8 +31,10 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "../../sass/cargoproject/app.scss";
+
+.cargoproject{
 
 div.heading{
   margin-bottom: 3rem;
@@ -156,5 +158,6 @@ h3.bolder-h3 {
   font-weight: 900;
   font-size: 5rem;
   text-transform: uppercase;
+}
 }
 </style>

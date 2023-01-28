@@ -17,17 +17,19 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import "../../sass/cargoproject/app.scss";
+<style lang="scss">
+.cargoproject{
+
 .nav-bar li{
-    &:hover{
-      cursor: pointer;
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
-    }
-    &:active{
-      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.3);
-    }
+
+&:hover{
+  cursor: pointer;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+&:active{
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.3);
+}
 }
 
-
+}
 </style>

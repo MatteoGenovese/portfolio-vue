@@ -60,10 +60,12 @@ export default {
 
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 @import '../../sass/portfolio/app.scss';
 
+.portfolio{
 .select-language{
+    font-size: $default-font-size;
     z-index: 10;
     position: fixed;
     top: 5%;
@@ -107,5 +109,6 @@ export default {
         }
     }
 
+}
 }
 </style>

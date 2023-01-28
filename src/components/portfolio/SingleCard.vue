@@ -61,10 +61,10 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 @import '../../sass/portfolio/app.scss';
 
-
+.portfolio{
 img{
     object-fit: cover;
     width: 100%;
@@ -79,14 +79,12 @@ img{
         -moz-box-shadow: 0 1.5rem 4rem rgba($secondary_color_dark, .4);
         -webkit-box-shadow: 0 1.5rem 4rem rgba($secondary_color_dark, .4);
         -o-box-shadow: 0 1.5rem 4rem rgba($secondary_color_dark, .4);
+    font-size: $default-font-size;
 
     .cs-card {
         height: 100%;
         width: 100%;
         text-align: center;
-
-
-
 
         &__tags {
             margin-top: 1.5rem;
@@ -125,11 +123,21 @@ img{
             padding: 3rem 3rem;
             background-color: $primary_color_light;
         }
+                /* Hide scrollbar for Chrome, Safari and Opera */
+        &__back::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        &__back{
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
     }
 }
 @media (hover: hover) {
     .cs-wrapper {
-        height: 35rem;
+        height: 50rem;
         &:hover {
             transition: all .8s ease;
         }
@@ -153,7 +161,7 @@ img{
 
 @media (hover: none) {
     .cs-wrapper {
-        height: 30rem;
+        height: 42rem;
         &.back .cs-card__front {
             opacity: 0;
             transform: translateX(-100%);
@@ -188,5 +196,6 @@ a.btn {
         scale: 1.1;
         transform: translateY(-0.3rem);
     }
+}
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="cargoproject">
     <Header :pages="pages" :contacts="contacts" />
     <Main :pages="pages" :contacts="contacts" :cards="cards" />
     <Footer :contacts="contacts" :footerLinks="footerLinks" />
@@ -151,7 +151,9 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "../../sass/cargoproject/app.scss";
+
+
 
 </style>

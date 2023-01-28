@@ -17,17 +17,17 @@
                     @changeActive="changeActive" />
             </div>
 
-            <div v-if="!checkIfFilterIsActive()" class="mb-3 text-center"> 
+            <div v-if="!checkIfFilterIsActive()" class="mb-3 text-center cardlist__search-result"> 
                 {{ $t('my-projects.found-message.totals') }} : 
                 {{ $t("my-projects.works").length }}                 
                 {{ $t('my-projects.found-message.projects') }}
             </div>
-            <div v-if="worksFiltered.length > 1 && checkIfFilterIsActive()" class="mb-3 text-center"> 
+            <div v-if="worksFiltered.length > 1 && checkIfFilterIsActive()" class="mb-3 text-center cardlist__search-result"> 
                 {{ $t('my-projects.found-message.found-results') }} : 
                 {{ worksFiltered.length }}                 
                 {{ $t('my-projects.found-message.results') }}
             </div>
-            <div v-if="worksFiltered.length == 1 && checkIfFilterIsActive()" class="mb-3 text-center">
+            <div v-if="worksFiltered.length == 1 && checkIfFilterIsActive()" class="mb-3 text-center cardlist__search-result">
                 {{ $t('my-projects.found-message.found-result') }} : 
                 {{ worksFiltered.length }}                 
                 {{ $t('my-projects.found-message.result') }}
@@ -148,10 +148,14 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 @import '../../sass/portfolio/app.scss';
-
-.filtersComponent,
-.cardList {
+.portfolio{
+    .cardlist{
+        &__search-result{
+            font-size: $default-font-size;
+        }
+    }
 }
+
 </style>

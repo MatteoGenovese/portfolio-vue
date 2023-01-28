@@ -86,45 +86,63 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 
 @import '../../sass/portfolio/app.scss';
 
-#AboutMe {
+.portfolio{
+    #AboutMe {
 
-    min-height: 30rem;
-    .about-me {
-        &__description:not(:last-child) {
-            margin-bottom: 2rem;
-            
-        }
-        .icon {
-            font-size: 3rem;
-            margin-right: 3rem;
-            @include respond(phone) { 
-                margin-right: 0;
-                margin-bottom: -1rem;
+        min-height: 30rem;
+        .about-me {
+            font-size: $default-font-size;
+            &__description:not(:last-child) {
+                margin-bottom: 2rem;
                 
             }
-            &>* {
-                background-image: $primary_gradient;
-                -webkit-background-clip: text;
-                color: transparent;
-                // 2b839c
+            .icon {
+                font-size: 3rem;
+                margin-right: 3rem;
+
+                @include respond(phone) { 
+                    margin-right: 0;
+                    margin-bottom: -1rem;
+                }
+
+                @include respond(tab-port) { 
+                    margin-right: 0rem;
+                    margin-bottom: -1rem;
+                }
+
+                @include respond(tab-land) { 
+                    margin-right: 2rem;
+                    margin-bottom: -1rem;
+                }
+
+                &>* {
+                    background-image: $primary_gradient;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    // 2b839c
+                }
             }
         }
-    }
-    .heading {
-        margin-bottom: 3rem;
-    }
-    .profile-photo{
-        &__clip{
-            width: 100%;
-            img{
-                max-width: 30rem;
-                border-radius: 50%;
-                @include respond(phone) { 
-                    margin-bottom: 2rem;
+        .heading {
+            margin-bottom: 3rem;
+        }
+        .profile-photo{
+            &__clip{
+                width: 100%;
+                img{
+                    max-width: 30rem;
+                    border-radius: 50%;
+                    @include respond(tab-land) { 
+                        margin-bottom: 2rem;
+                    }
+                    @include respond(phone) { 
+                        margin-bottom: 2rem;
+                    }
+
                 }
             }
         }

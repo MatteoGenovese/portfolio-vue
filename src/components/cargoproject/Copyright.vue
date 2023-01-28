@@ -20,8 +20,10 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "../../sass/cargoproject/app.scss";
+.cargoproject{
+
 #copyright{
     height: 9rem;
     background-color: #000;
@@ -31,6 +33,6 @@ export default {
         color: $sixth_color;
     }
 }
-
+}
 
 </style>

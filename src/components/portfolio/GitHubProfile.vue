@@ -17,33 +17,36 @@ export default {
 
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 @import '../../sass/portfolio/app.scss';
 
-.github-profile {
-    font-weight: bold;
+.portfolio{
+    .github-profile {
+        font-weight: bold;
+        font-size: $default-font-size;
 
-    .icon {
-        font-size: 1rem;
-        margin-right: 1rem;
+        .icon {
+            font-size: 1.5rem;
+            margin-right: 1rem;
 
-        &>* {
-            @include respond(phone) { 
-                font-size: 300%; 
+            &>* {
+                @include respond(phone) { 
+                    font-size: 300%; 
+                }
+                background-image: $primary_gradient;
+                -webkit-background-clip: text;
+                color: transparent;
+                // 2b839c
             }
-            background-image: $primary_gradient;
-            -webkit-background-clip: text;
-            color: transparent;
-            // 2b839c
+        }
+
+        &__text {
+            font-weight: bolder;
+            margin-right: 1rem;
         }
     }
-
-    &__text {
-        font-weight: bolder;
-        margin-right: 1rem;
+    .fa-github {
+        font-size: 4rem;
     }
-}
-.fa-github {
-    font-size: 4rem;
 }
 </style>

@@ -27,10 +27,11 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 
 @import "../../sass/boolflix/app.scss";
 
+.boolflix{
 main{
   padding: 10px;
   background-color: #565456;
@@ -38,5 +39,5 @@ main{
   min-height: calc( 100vh - 4rem );
 
 }
-
+}
 </style>

@@ -54,8 +54,9 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped >
+<style lang="scss">
 @import "../../sass/cargoproject/app.scss";
+.cargoproject{
 
 footer {
   background-color: $first_color;
@@ -86,6 +87,6 @@ footer {
   margin-top: 1rem;
 }
 }
-
+}
 
 </style>

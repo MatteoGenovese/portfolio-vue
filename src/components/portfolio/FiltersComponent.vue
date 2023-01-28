@@ -43,9 +43,10 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 @import '../../sass/portfolio/app.scss';
 
+.portfolio{
 .filter{
 
     padding: 0.5rem 1rem;
@@ -90,5 +91,6 @@ export default {
             }
         }
     }
+}
 }
 </style>

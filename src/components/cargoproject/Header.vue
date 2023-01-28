@@ -39,8 +39,9 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "../../sass/cargoproject/app.scss";
+.cargoproject{
 
 header{
     font-size: 1.1rem;
@@ -87,5 +88,6 @@ section.contacts {
 }
 .social {
     display: flex;
+}
 }
 </style>

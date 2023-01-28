@@ -23,13 +23,15 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 @import '../../sass/portfolio/app.scss';
 $primary-color-blue: #457B9D ;
+.portfolio{
 a.navbar-brand{
     background-color: var($primary-color-blue) !important;
     height: 5rem;
     padding: 0;
     font-size: $default-font-size;
+}
 }
 </style>

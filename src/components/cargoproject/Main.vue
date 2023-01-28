@@ -320,9 +320,10 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "../../sass/cargoproject/app.scss";
 
+.cargoproject{
 
 #home {
   min-height: 61.25rem;
@@ -598,6 +599,6 @@ main section {
     color: $first_color;
   }
 }
-
+}
 
 </style>

@@ -70,10 +70,11 @@ export default {
 
 }
 </script>
-<style lang="scss" scoped>
+<style lang="scss" >
 
 @import '../../sass/portfolio/app.scss';
 
+.portfolio{
 #CoreTechnologies{
     min-height: 20rem;
 }
@@ -81,6 +82,7 @@ export default {
 .technology-card{
 
     padding: 3rem;
+    font-size: $default-font-size;
     @include respond(phone) { 
             padding: 1.5rem;
         }
@@ -105,5 +107,6 @@ export default {
         }
 
     }
+}
 }
 </style>

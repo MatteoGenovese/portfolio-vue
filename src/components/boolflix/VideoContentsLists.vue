@@ -49,30 +49,32 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 
 @import "../../sass/boolflix/app.scss";
 
-.list-of-movies,
-.list-of-series{
-    display : flex;
-    flex-wrap: wrap;
-    row-gap: 20px;
-    & *{
+.boolflix{
+    .list-of-movies,
+    .list-of-series{
+        display : flex;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        & *{
 
-        flex-grow: 1;
+            flex-grow: 1;
+        }
     }
-}
 
-.no-results, h2{
-    color: white;
-    font-size: 2rem;
-}
+    .no-results, h2{
+        color: white;
+        font-size: 2rem;
+    }
 
-.contents{
-    margin: 2.5rem 0;
-    h2{
-        margin-bottom: 1rem;
+    .contents{
+        margin: 2.5rem 0;
+        h2{
+            margin-bottom: 1rem;
+        }
     }
 }
 

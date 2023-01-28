@@ -7,8 +7,7 @@ $section-color: #e9f4fa;
 $primary_gradient: linear-gradient(to right bottom, rgba($secondary_color_dark, 0.9), rgba($secondary_color_light, 0.9));
 $secondary_gradient: linear-gradient( to right bottom, rgba($primary_color_light, 0.7), rgba($secondary_color_light, 0.7));
 // Typography
-$font-family-sans-serif: 'Nunito',
-sans-serif;
+$font-family-sans-serif: 'Nunito',sans-serif;
 $line-height-base: 1.6;
 // Default font size
-$default-font-size:16px;
+$default-font-size:1.6rem;

@@ -34,8 +34,10 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "../../sass/cargoproject/app.scss";
+.cargoproject{
+
 
 a.button {
     height: 3rem;
@@ -92,5 +94,6 @@ a.bgc-none-button {
     100%{
         transform: translateY(-1rem);
     }
+}
 }
 </style>

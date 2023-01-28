@@ -9,7 +9,21 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+    //all the larger ones before the smaller ones
+
+    @include respond(tab-land) { // width < 1200?
+        font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+    }
+
+    @include respond(tab-port) { // width < 900?
+        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }
+
+    @include respond(big-desktop) {
+        font-size: 75%; //1rem = 12, 12/16
+    }
 }
 
 body {
@@ -22,82 +36,85 @@ body {
     overflow-x: hidden;
 }
 
-.box {
-    min-height: 50rem;
-    width: 100%;
-    justify-content: flex-start;
-}
+.portfolio{
 
-ol,
-ul {
-    padding: 0;
-}
-
-.text-marked {
-    background-image: linear-gradient( to right bottom, rgba($secondary_color_dark, 0.9), rgba($secondary_color_light, 0.9));
-    -webkit-background-clip: text;
-    color: transparent;
-}
-
-.box {
-    min-height: 40rem
-}
-
-section {
-    &:not(:last-child) {
-        background-color: $section-color;
+    .box {
+        min-height: 50rem;
+        width: 100%;
+        justify-content: flex-start;
     }
-    &:last-child {
-        background-color: $section-color;
-    }
-}
 
-@media (hover: hover) {
+    ol,
+    ul {
+        padding: 0;
+    }
+
+    .text-marked {
+        background-image: linear-gradient( to right bottom, rgba($secondary_color_dark, 0.9), rgba($secondary_color_light, 0.9));
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    .box {
+        min-height: 40rem
+    }
+
     section {
         &:not(:last-child) {
-            padding: 5rem 2rem;
-            @include respond(phone) {
-                padding: 1.5rem 0rem;
+            background-color: $section-color;
+        }
+        &:last-child {
+            background-color: $section-color;
+        }
+    }
+
+    @media (hover: hover) {
+        section {
+            &:not(:last-child) {
+                padding: 5rem 2rem;
+                @include respond(phone) {
+                    padding: 1.5rem 0rem;
+                }
+            }
+            &:last-child {
+                padding-top: 0rem;
             }
         }
-        &:last-child {
-            padding-top: 0rem;
+    }
+
+    @media (hover: none) {
+        section {
+            &:not(:last-child) {
+                padding: 5rem 0.5rem;
+            }
+            &:last-child {
+                padding-top: 0rem;
+            }
         }
     }
-}
 
-@media (hover: none) {
-    section {
-        &:not(:last-child) {
-            padding: 5rem 0.5rem;
-        }
-        &:last-child {
-            padding-top: 0rem;
-        }
+    section:nth-child(even) {
+        background-color: white;
     }
-}
 
-section:nth-child(even) {
-    background-color: white;
-}
-
-#app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: justify;
-    color: #2c3e50;
-    h1 {
-        text-align: center;
-    }
-}
-
-nav {
-    a {
-        font-weight: bold;
+    #app {
+        font-family: Avenir, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: justify;
         color: #2c3e50;
-        &.router-link-exact-active {
-            color: #42b983;
+        h1 {
+            text-align: center;
+        }
+    }
+
+    nav {
+        a {
+            font-weight: bold;
+            color: #2c3e50;
+            &.router-link-exact-active {
+                color: #42b983;
+            }
         }
     }
 }

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="boolflix">
         <Header @search="searchFilmAndTvSeries" />
         <Main :movies="moviesFromApi" :tvSeries="tvSeriesFromApi" />
     </div>

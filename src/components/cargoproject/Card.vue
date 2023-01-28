@@ -51,9 +51,9 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "../../sass/cargoproject/app.scss";
-
+.cargoproject{
 div.card {
     width: calc((100% / 3) - 2rem);
     background-color: rgba($third_color, 0.1);
@@ -87,8 +87,8 @@ div.card-title {
 
 .quote-icon {
     position: absolute;
-    bottom: 2.4rem;
-    right: 2.4rem;
+    bottom: 4.8rem;
+    right: 4.8rem;
     font-size: 2.5rem;
     i{
     color: $third_color;
@@ -126,6 +126,7 @@ ul{
         cursor: pointer;
     }
 
+}
 }
 }
 

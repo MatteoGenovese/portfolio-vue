@@ -26,12 +26,14 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 @import '../../sass/portfolio/app.scss';
 
-#FooterComponent {
-    height: 10rem;
-    background-color: #0F2027;
-    color: white;
+.portfolio{
+    #FooterComponent {
+        height: 10rem;
+        background-color: #0F2027;
+        color: white;
+    }
 }
 </style>
