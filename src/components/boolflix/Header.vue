@@ -82,7 +82,7 @@ export default {
     color: #CC2E25;
     display: flex;
     align-items: center;
-    font-size: 2rem;
+    font-size: 3.2rem;
     font-weight:bolder;
     img{
       height: 100%;
@@ -134,6 +134,7 @@ header {
     padding-left: 1rem;
     padding-bottom: 1rem;
     display: flex;
+    font-size: 1.4rem;
 
 
     

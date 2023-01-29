@@ -136,22 +136,10 @@
                     "Html+Css"
                 ],
                 "gitHubLink": "https://github.com/MatteoGenovese/htmlcss-playstation",
-                "webSiteLink": ""
+                "webSiteLink": "/playstation/"
             },
             {
                 "id": 8,
-                "imageName": "DiscorsStatic.png",
-                "visible": true,
-                "title": "Discord",
-                "gitHubLink": "https://github.com/MatteoGenovese/htmlcss-discord",
-                "description": "Discord è stato uno dei primi progetti in Boolean Careers. Il progetto consisteva nella creazione di un sito web statico ispirato al famoso servizio di comunicazione online Discord. <br>È stato utilizzato il codice HTML e CSS per creare un sito con un design simile.",
-                "webSiteLink": "",
-                "tags": [
-                    "Html+Css"
-                ]
-            },
-            {
-                "id": 9,
                 "imageName": "SpotifyStatic.png",
                 "visible": true,
                 "title": "Spotify Web",
@@ -160,7 +148,7 @@
                     "Html+Css"
                 ],
                 "gitHubLink": "https://github.com/MatteoGenovese/html-css-spotifyweb",
-                "webSiteLink": ""
+                "webSiteLink": "/spotify/"
             }
         ]
     }

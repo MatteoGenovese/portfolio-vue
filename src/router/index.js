@@ -5,6 +5,8 @@ import HomeBoolflix from '../views/boolflix/HomeBoolflix.vue';
 import HomeCargoProject from '../views/cargoproject/HomeCargoProject.vue';
 import BoolzApp from '../views/boolzapp/BoolzApp.vue'
 import HomeDCComics from '../views/dccomics/HomeDCComics.vue'
+import HomePlaystation from '../views/playstation/HomePlaystation.vue'
+import HomeSpotify from '../views/spotify/HomeSpotify.vue'
 
 
 import i18n from '../i18n'
@@ -19,7 +21,6 @@ const router = new VueRouter({
         {
             path: '/',
             redirect: `/${i18n.locale}/`
-
         },
         {
             path: '/boolflix/',
@@ -27,9 +28,19 @@ const router = new VueRouter({
             component: HomeBoolflix
         },
         {
+            path: '/spotify/',
+            name: 'spotify',
+            component: HomeSpotify
+        },
+        {
             path: '/boolzapp/',
             name: 'boolzapp',
             component: BoolzApp
+        },
+        {
+            path: '/playstation/',
+            name: 'playstation',
+            component: HomePlaystation
         },
         {
             path: '/dccomics/',
