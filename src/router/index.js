@@ -3,9 +3,10 @@ import VueRouter from 'vue-router'
 import HomePortfolio from '../views/portfolio/HomePortfolio.vue'
 import HomeBoolflix from '../views/boolflix/HomeBoolflix.vue';
 import HomeCargoProject from '../views/cargoproject/HomeCargoProject.vue';
+import BoolzApp from '../views/boolzapp/BoolzApp.vue'
+import HomeDCComics from '../views/dccomics/HomeDCComics.vue'
 
 
-// import ComingSoonComponent from '../views/ComingSoonComponent.vue'
 import i18n from '../i18n'
 
 
@@ -24,6 +25,16 @@ const router = new VueRouter({
             path: '/boolflix/',
             name: 'boolflix',
             component: HomeBoolflix
+        },
+        {
+            path: '/boolzapp/',
+            name: 'boolzapp',
+            component: BoolzApp
+        },
+        {
+            path: '/dccomics/',
+            name: 'dccomics',
+            component: HomeDCComics
         },
         {
             path: '/cargoproject/',
