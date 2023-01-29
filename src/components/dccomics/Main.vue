@@ -166,6 +166,11 @@ main {
 
   .main-content {
     background-color: #1C1C1C;
+    height: calc( 100vh - 10rem - 27rem - 15rem - 27rem - 11rem );
+    min-height: 55rem;
+    @include respond(phone) {
+      min-height: 105rem;
+    }
     color: #fff;
     padding: 1.6rem;
     display: flex;
