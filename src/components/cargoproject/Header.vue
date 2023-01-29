@@ -1,18 +1,25 @@
 <template>
     <header>
         <section class="contacts">
-            <div class="container">
-                <div class="open-hours"><i class="fa-solid fa-clock"></i> {{ contacts.openHours }}</div>
-                <div class="telephone"><i class="fa-solid fa-phone"></i> {{ contacts.telephoneNumber }}</div>
-                <div><i class="fa-solid fa-envelope"></i> {{ contacts.email }}</div>
-                <div class="social">
-                    <div id="facebook-icon"><i class="fa-brands fa-facebook-f"></i></div>
-                    <div id="tweeter-icon"><i class="fa-brands fa-twitter"></i></div>
-                    <div id="linkedin-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div class="container w-100 contacts__container">
+                <div class="row d-flex justify-content-center w-100">
+
+                    <div class="contacts__open-hours col-6 col-sm-5 col-md-6"><span><i class="fa-solid fa-clock"></i> {{ contacts.openHours }}</span></div>
+                    <div class="contacts__telephone col-6 col-sm-3 offset-md-1 col-md-2"><span><i class="fa-solid fa-phone"></i> {{ contacts.telephoneNumber }}</span></div>
+                    <div class="contacts__email col-6 col-sm-3 col-md-2"><span><i class="fa-solid fa-envelope"></i> {{ contacts.email }}</span></div>
+                    <div class="contacts__social col-6 col-sm-1 col-md-1">
+                        <span class=" d-flex">
+
+                            <div id="facebook-icon" class=" ms-2"><i class="fa-brands fa-facebook-f"></i></div>
+                            <div id="tweeter-icon" class=" ms-2"><i class="fa-brands fa-twitter"></i></div>
+                            <div id="linkedin-icon" class=" ms-2"><i class="fa-brands fa-linkedin-in"></i></div>
+
+                        </span>
+                    </div>
                 </div>
+
             </div>
         </section>
-
     </header>
 </template>
 
@@ -47,47 +54,42 @@ header{
     font-size: 1.1rem;
 }
 
-section.contacts {
+.contacts {
     background-color: $seventh_color;
     color: $second_color;
-    height: 5rem;
-}
+    height: 4rem;
 
-.contacts>*{
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    &>* {
-        height: 100%;
-        display: flex;
+    &__container{
         align-items: center;
-        padding-right: .5rem;
-        padding-left: .5rem;
-        ul{
-            margin-bottom: 0;
-        }
-        &>* {
+        height: 100%;
+        &>*{
             height: 100%;
-            display: flex;
-            align-items: center;
-            padding-right: .5rem;
-            padding-left: .5rem;
-            &>* {
-                height: 100%;
-                display: flex;
-                align-items: center;
-                padding-right: .5rem;
-                padding-left: .5rem;
-            }
         }
     }
-}
-.open-hours{
-    flex-grow: 1;
-}
-.social {
-    display: flex;
+
+
+    &__open-hours,
+    &__telephone,
+    &__email,
+    &__social{
+        display: flex;
+        align-items: center;
+        @include respond(tab-land) {
+            font-size: 100%;
+        }
+        @include respond(tab-port) { 
+            font-size: 85%; 
+            height: 100%;
+        }
+        @include respond(phone) { 
+            font-size: 75%; 
+            height: 2rem;        
+            justify-content: center;
+        }
+    }
+    &__social {
+        display: flex;
+    }
 }
 }
 </style>

@@ -1,37 +1,39 @@
 <template>
-    <div class="card d-flex flex-column" v-if="card.isFeedback == false && need == 'services'">
-        <div class="card-img-container-fa d-flex justify-content-between">
-            <div class="icon"><i :class="card.image_url"></i></div>
-            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
+    <div class="col-12 col-sm-4 g-2" v-if="need != 'links'">
+        <div class="card d-flex flex-column " v-if="card.isFeedback == false && need == 'services'">
+            <div class="card-img-container-fa d-flex justify-content-between">
+                <div class="icon"><i :class="card.image_url"></i></div>
+                <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+            <div class="card-title">
+                {{ card.cardTitle }}
+            </div>
+            <div class="card-description">
+                {{ card.cardDescription }}
+            </div>
         </div>
-        <div class="card-title">
-            {{ card.cardTitle }}
-        </div>
-        <div class="card-description">
-            {{ card.cardDescription }}
+        <div class="card d-flex flex-column position-relative " v-else-if="card.isFeedback == true && need == 'feedback'">
+            <div class="card-img-container-png d-flex justify-content-between">
+                <img :src="require(`../../assets/cargoproject/${card.image_url}`)" alt="" class="png">
+            </div>
+            <div class="card-title">
+                {{ card.cardTitle }}
+            </div>
+            <div class="card-description">
+                {{ card.cardDescription }}
+            </div>
+            <div class="quote-icon"><i class="fa-solid fa-quote-right"></i></div>
         </div>
     </div>
-    <div class="card d-flex flex-column position-relative" v-else-if="card.isFeedback == true && need == 'feedback'">
-        <div class="card-img-container-png d-flex justify-content-between">
-            <img :src="require(`../../assets/cargoproject/${card.image_url}`)" alt="" class="png">
-        </div>
-        <div class="card-title">
-            {{ card.cardTitle }}
-        </div>
-        <div class="card-description">
-            {{ card.cardDescription }}
-        </div>
-        <div class="quote-icon"><i class="fa-solid fa-quote-right"></i></div>
-    </div>
-    <div class="card d-flex flex-column position-relative" v-else-if="need == 'links'">
-        <div class="card-title">
-            {{ card.topic }}
-        </div>
-        <ul>
-            <li v-for="(link,index) in card.links" :key="index" class="link">{{link}}</li>
-        </ul>
+    <div class="card d-flex flex-column position-relative col-12 col-sm-4" v-else-if="need == 'links'">
+            <div class="card-title">
+                {{ card.topic }}
+            </div>
+            <ul>
+                <li v-for="(link,index) in card.links" :key="index" class="link">{{link}}</li>
+            </ul>
 
-    </div>
+        </div>
 </template>
 
 <script>
@@ -55,10 +57,9 @@ export default {
 @import "../../sass/cargoproject/app.scss";
 .cargoproject{
 div.card {
-    width: calc((100% / 3) - 2rem);
+    // width: calc((100% / 3) - 2rem);
     background-color: rgba($third_color, 0.1);
     padding: 3rem 1.8rem;
-    margin: 1.6rem;
 }
 
 div.card-img-container-fa {

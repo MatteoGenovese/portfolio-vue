@@ -9,7 +9,7 @@
             <div class="gen">GEN</div>
           </div>
           <div class="nav-links">
-            <ul>
+            <ul class=" d-none d-md-flex">
               <NavLink v-for="(page, index) in pages" :key="index" :page="page" />
             </ul>
           </div>
@@ -17,7 +17,7 @@
             <i class="fa-regular fa-user"></i>
           </div>
           <div class="social">
-            <MyButton :msg="'GET IN TOUCH'" :buttonType="'light-blue'" :link="'get in touch'" />
+            <MyButton :msg="'GET IN TOUCH'" :buttonType="'light-blue'" :link="'get in touch'" :classBtn="'mx-3'" />
           </div>
         </div>
       </div>
@@ -38,7 +38,8 @@
     <!-- about -->
     <section id="about" class="jumbotron d-flex flex-column">
       <div class="container flex-grow-1 d-flex align-items-center">
-        <div class="w-75">
+        <div class="row">
+          <div class=" col-12 col-sm-8">
           <SectionHeading :page="pages[1]" />
           <div>
             Praesent fringilla quis massa et placerat. Mauris eu dui eget urna pellentesque gravida vitae quis nibh. Ut
@@ -59,7 +60,7 @@
         </div>
 
 
-        <div class="w-25">
+        <div class=" col-12 col-sm-4 d-flex flex-sm-column flex-row column-right">
           <div class="vehicles">
             <h4>Vehicle Types</h4>
             <div class="vehicle-row">
@@ -102,6 +103,9 @@
             </div>
           </div>
 
+        </div>
+
+
 
 
 
@@ -112,7 +116,7 @@
 
     <!-- services -->
     <section id="services" class="d-flex flex-column justify-content-center">
-      <div class="container d-flex flex-column">
+      <div class="container">
         <div class="w-100 d-flex">
           <div class="w-75">
             <SectionHeading :page="pages[2]" />
@@ -123,9 +127,11 @@
           </div>
         </div>
 
-        <div class="w-100 d-flex justify-content-between">
-          <Card v-for="(card, index) in cards" :key="index" :card="card" :need="'services'" />
-        </div>
+          <div class="row">
+
+
+              <Card v-for="(card, index) in cards" :key="index" :card="card" :need="'services'" />
+          </div>
 
       </div>
     </section>
@@ -202,16 +208,19 @@
         <div class="w-75 d-flex flex-column align-items-center">
           <SectionHeading :page="pages[5]" class="text-center" />
         </div>
-        <div class="w-100 d-flex">
+
+        <div class="row">
           <Card v-for="(card, index) in cards" :key="index" :card="card" :need="'feedback'" />
         </div>
+
       </div>
     </section>
 
     <!-- getintouch -->
     <section id="getintouch" class="d-flex flex-column">
       <div class="container d-flex flex-grow-1 align-items-center">
-        <div class="w-75">
+        <div class="row w-100">
+          <div class="col-12 col-md-8">
           <SectionHeading :page="pages[6]" />
           <div class="form">
 
@@ -244,7 +253,7 @@
             </div>
           </div>
         </div>
-        <div class="w-25">
+        <div class="col-12 col-md-4">
           <div class="corporation">
             <div class="corp-container">
               <div class="corp-information">
@@ -253,7 +262,7 @@
                 </div>
                 <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
                 <div>Praesent diam lacus, dapibus sed imperdiet consectetur.</div>
-                <div class="corporation-contacts">
+                <div class="corporation-contacts d-flex flex-column d-sm-flex  flex-sm-row d-md-inline-block">
                   <div class="phone-number d-flex">
                     <div class="corp-icon mx-2"><i class="fa-solid fa-phone"></i></div>
                     <div>{{ contacts.telephoneNumber }}</div>
@@ -268,7 +277,7 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-7 mt-4">
+                  <div class="col-7">
                     <MyButton :msg="'VIEW MAP'" :buttonType="'light-blue-colors'" :link="'#'" />
                   </div>
                 </div>
@@ -278,6 +287,8 @@
             </div>
 
           </div>
+        </div>
+
         </div>
       </div>
     </section>
@@ -325,13 +336,21 @@ export default {
 
 .cargoproject{
 
+  section{
+    padding-top: 2rem;
+  }
+
 #home {
   min-height: 61.25rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/cargoproject/bg-9.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 75% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 100%, 0% 100%);
+  @include respond(tab-port) {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 50% 100%, 0% 100%);
+  }
+
 
   .logo {
     .gen {
@@ -418,6 +437,11 @@ export default {
 
 #about {
   background-color: $second_color;
+  .column-right{
+    @include respond(phone) {
+      margin-bottom: 2rem;
+    }
+  }
   .vehicle-row {
     display: flex;
     .vehicle-size {
@@ -448,6 +472,12 @@ export default {
   }
   .certifications {
     margin-top: 5rem;
+    margin-left: 0rem;
+
+    @include respond(phone) {
+      margin-top: 0rem;
+      margin-left: 3rem;
+    }
     .certification-row {
       height: 12rem;
       img {
@@ -525,6 +555,10 @@ export default {
     background-color: $sixth_color;
     min-width: 5rem;
     height: 5rem;
+    @include respond(tab-port) {
+      min-width: 3rem;
+      height: 3rem;
+    }
     display: flex;
     justify-content: center;
     align-items: center;
@@ -538,6 +572,7 @@ export default {
   }
   .form {
     margin-right: 5rem;
+    width: 100%;
     input,
     select {
       background-color: rgba($fifth_color, 0.5);
@@ -592,10 +627,9 @@ main section {
 }
 
 .vehicles,
-.certifications,
-.corporation {
+.certifications{
   h4 {
-    margin-bottom: 3.2rem;
+    margin-bottom: 3rem;
     color: $first_color;
   }
 }

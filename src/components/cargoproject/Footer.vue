@@ -3,23 +3,29 @@
     <div class="flex-grow-1 d-flex align-content-center justify-content-center">
       <div class="container flex-grow-1 d-flex align-items-center">
 
-        <div class="w-25 flex-column corp-info">
-          <div class="logo d-flex">
-            <div class="nex">NEX</div>
-            <div class="gen">GEN</div>
+        <div class="row w-100">
+
+          <div class="col-12 col-md-4 flex-column corp-info">
+            <div class="logo d-flex">
+              <div class="nex">NEX</div>
+              <div class="gen">GEN</div>
+            </div>
+            <div>Functional HTML Template for Corporate & Business.</div>
+            <div><i class="fa-solid fa-phone"></i> {{ contacts.telephoneNumber }}</div>
+            <div><i class="fa-solid fa-envelope"></i> {{ contacts.email }}</div>
+            <div><i class="fa-solid fa-location-dot"></i>{{ contacts.address }}</div>
+            <div class="mt-4">
+              <MyButton :msg="'GET IN TOUCH'" :buttonType="'bgc-none'" :link="'getintouch'" />
+            </div>
+  
           </div>
-          <div>Functional HTML Template for Corporate & Business.</div>
-          <div><i class="fa-solid fa-phone"></i> {{ contacts.telephoneNumber }}</div>
-          <div><i class="fa-solid fa-envelope"></i> {{ contacts.email }}</div>
-          <div><i class="fa-solid fa-location-dot"></i>{{ contacts.address }}</div>
-          <div class="mt-4">
-          <MyButton :msg="'GET IN TOUCH'" :buttonType="'bgc-none'" :link="'getintouch'" />
+  
+          <div class="col-12 col-md-8 ">
+            <div class="row">
+              <Card v-for="(link, index) in footerLinks" :key="index" :card="link" :need="'links'" />
+            </div>
           </div>
 
-        </div>
-
-        <div class="w-75 d-flex">
-          <Card v-for="(link, index) in footerLinks" :key="index" :card="link" :need="'links'" />
         </div>
 
 
