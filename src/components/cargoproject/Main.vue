@@ -148,22 +148,12 @@
               <div class="process-description">Lorem ipsum dolor sit amet consectetur.</div>
             </div>
             <div class="process-sequence d-flex flex-column align-items-center">
-              <div class="process-number">01</div>
+              <div class="process-number">02</div>
               <div class="process-title">Collection of information</div>
               <div class="process-description">Lorem ipsum dolor sit amet consectetur.</div>
             </div>
             <div class="process-sequence d-flex flex-column align-items-center">
-              <div class="process-number">01</div>
-              <div class="process-title">Collection of information</div>
-              <div class="process-description">Lorem ipsum dolor sit amet consectetur.</div>
-            </div>
-            <div class="process-sequence d-flex flex-column align-items-center">
-              <div class="process-number">01</div>
-              <div class="process-title">Collection of information</div>
-              <div class="process-description">Lorem ipsum dolor sit amet consectetur.</div>
-            </div>
-            <div class="process-sequence d-flex flex-column align-items-center">
-              <div class="process-number">01</div>
+              <div class="process-number">03</div>
               <div class="process-title">Collection of information</div>
               <div class="process-description">Lorem ipsum dolor sit amet consectetur.</div>
             </div>
