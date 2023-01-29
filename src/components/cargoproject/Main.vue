@@ -487,7 +487,7 @@ export default {
   .timing-line {
     border-top: .5rem solid rgba($sixth_color, 0.5);
     .process-title {
-      font-size: 1.875rem;
+      font-size: 1.4rem;
       font-weight: 800;
       color: $first_color  !important;
     }

@@ -25,7 +25,7 @@
             <div class="quote-icon"><i class="fa-solid fa-quote-right"></i></div>
         </div>
     </div>
-    <div class="card d-flex flex-column position-relative col-12 col-sm-4" v-else-if="need == 'links'">
+    <div class="card d-flex flex-column position-relative col-4 col-sm-4 categories" v-else-if="need == 'links'">
             <div class="card-title">
                 {{ card.topic }}
             </div>
@@ -59,7 +59,7 @@ export default {
 div.card {
     // width: calc((100% / 3) - 2rem);
     background-color: rgba($third_color, 0.1);
-    padding: 3rem 1.8rem;
+    padding: 2rem 0.5rem;
 }
 
 div.card-img-container-fa {

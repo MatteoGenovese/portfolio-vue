@@ -28,7 +28,8 @@ export default {
     height: 9rem;
     background-color: #000;
     color: $second_color;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+
     .green-text{
         color: $sixth_color;
     }

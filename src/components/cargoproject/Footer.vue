@@ -85,6 +85,12 @@ footer {
     }
   }
 
+  .categories *{
+    @include respond(phone) {
+        font-size: 100%;
+    }
+  }
+
   .logo>* {
     padding-right: .5rem;
     padding-left: .5rem;
