@@ -125,12 +125,18 @@ main {
 
   .jumbo-box {
     height: 27rem;
+
     background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
 
     img {
       object-fit: contain;
+      @include respond(phone) {
+        object-fit: cover;
+        height: 100%;
+
+      }
       vertical-align: middle;
       position: relative;
       width: 100%;
