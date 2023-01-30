@@ -91,8 +91,8 @@
             <div class="recently-played">
                 <div class="container">
                     <h2>Recently-played</h2>
-                    <div class="flex-cont flex-w flex-ai-s justify-content-start ">
-                        <div class="flex-cont-v flex-ac-c ms-4">
+                    <div class="flex-cont flex-w flex-ai-s justify-content-start list">
+                        <div class="flex-cont-v flex-ac-c ms-2">
                             <div class="play-hover">
                                 <img src="../../assets/spotify/img/metal_lifting.jpg" alt="">
                                 <i class="fa-solid fa-play"></i>
@@ -100,7 +100,7 @@
                             <h3>Heavy Metal</h3>
                             <h4>Subtitle</h4>
                         </div>
-                        <div class="flex-cont-v flex-ac-c ms-4">
+                        <div class="flex-cont-v flex-ac-c ms-2">
                             <div class="play-hover">
                                 <img src="../../assets/spotify/img/metal_lifting.jpg" alt="">
                                 <i class="fa-solid fa-play"></i>
@@ -108,7 +108,7 @@
                             <h3>Heavy Metal</h3>
                             <h4>Subtitle</h4>
                         </div>
-                        <div class="flex-cont-v flex-ac-c ms-4">
+                        <div class="flex-cont-v flex-ac-c ms-2">
                             <div class="play-hover">
                                 <img src="../../assets/spotify/img/metal_lifting.jpg" alt="">
                                 <i class="fa-solid fa-play"></i>
@@ -116,7 +116,7 @@
                             <h3>Heavy Metal</h3>
                             <h4>Subtitle</h4>
                         </div>
-                        <div class="flex-cont-v flex-ac-c ms-4">
+                        <div class="flex-cont-v flex-ac-c ms-2">
                             <div class="play-hover">
                                 <img src="../../assets/spotify/img/metal_lifting.jpg" alt="">
                                 <i class="fa-solid fa-play"></i>
@@ -124,7 +124,7 @@
                             <h3>Heavy Metal</h3>
                             <h4>Subtitle</h4>
                         </div>
-                        <div class="flex-cont-v flex-ac-c ms-4">
+                        <div class="flex-cont-v flex-ac-c ms-2">
                             <div class="play-hover">
                                 <img src="../../assets/spotify/img/metal_lifting.jpg" alt="">
                                 <i class="fa-solid fa-play"></i>
@@ -132,7 +132,7 @@
                             <h3>Heavy Metal</h3>
                             <h4>Subtitle</h4>
                         </div>
-                        <div class="flex-cont-v flex-ac-c ms-4">
+                        <div class="flex-cont-v flex-ac-c ms-2">
                             <div class="play-hover">
                                 <img src="../../assets/spotify/img/metal_lifting.jpg" alt="">
                                 <i class="fa-solid fa-play"></i>
@@ -153,8 +153,8 @@
                 <div class="container">
                     <h2>Creato per John Doe</h2>
                     <h4>Più ascolti, più accurati saranno i suggerimenti</h4>
-                    <div class="flex-cont flex-w flex-ai-s flex-gap">
-                        <div class="flex-cont-v flex-ac-c ms-4">
+                    <div class="flex-cont flex-w flex-ai-s flex-gap list">
+                        <div class="flex-cont-v flex-ac-c ms-2">
                             <div class="play-hover">
                                 <img src="../../assets/spotify/img/metal_lifting.jpg" alt="">
                                 <i class="fa-solid fa-play"></i>
@@ -162,7 +162,7 @@
                             <h3>Heavy Metal</h3>
                             <h4>Subtitle</h4>
                         </div>
-                        <div class="flex-cont-v flex-ac-c ms-4">
+                        <div class="flex-cont-v flex-ac-c ms-2">
                             <div class="play-hover">
                                 <img src="../../assets/spotify/img/metal_lifting.jpg" alt="">
                                 <i class="fa-solid fa-play"></i>
@@ -182,8 +182,8 @@
                 <div class="container">
                     <h2>Creato per John Doe</h2>
                     <h4>Più ascolti, più accurati saranno i suggerimenti</h4>
-                    <div class="flex-cont flex-w flex-ai-s justify-content-start">
-                        <div class="flex-cont-v flex-ac-c ms-4">
+                    <div class="flex-cont flex-w flex-ai-s justify-content-start list">
+                        <div class="flex-cont-v flex-ac-c ms-2">
                             <div class="play-hover">
                                 <img src="../../assets/spotify/img/metal_lifting.jpg" alt="">
                                 <i class="fa-solid fa-play"></i>
@@ -191,7 +191,7 @@
                             <h3>Heavy Metal</h3>
                             <h4>Subtitle</h4>
                         </div>
-                        <div class="flex-cont-v flex-ac-c ms-4">
+                        <div class="flex-cont-v flex-ac-c ms-2">
                             <div class="play-hover">
                                 <img src="../../assets/spotify/img/metal_lifting.jpg" alt="">
                                 <i class="fa-solid fa-play"></i>
@@ -199,7 +199,7 @@
                             <h3>Heavy Metal</h3>
                             <h4>Subtitle</h4>
                         </div>
-                        <div class="flex-cont-v flex-ac-c ms-4">
+                        <div class="flex-cont-v flex-ac-c ms-2">
                             <div class="play-hover">
                                 <img src="../../assets/spotify/img/metal_lifting.jpg" alt="">
                                 <i class="fa-solid fa-play"></i>
@@ -207,7 +207,7 @@
                             <h3>Heavy Metal</h3>
                             <h4>Subtitle</h4>
                         </div>
-                        <div class="flex-cont-v flex-ac-c ms-4">
+                        <div class="flex-cont-v flex-ac-c ms-2">
                             <div class="play-hover">
                                 <img src="../../assets/spotify/img/metal_lifting.jpg" alt="">
                                 <i class="fa-solid fa-play"></i>
@@ -215,7 +215,7 @@
                             <h3>Heavy Metal</h3>
                             <h4>Subtitle</h4>
                         </div>
-                        <div class="flex-cont-v flex-ac-c ms-4">
+                        <div class="flex-cont-v flex-ac-c ms-2">
                             <div class="play-hover">
                                 <img src="../../assets/spotify/img/metal_lifting.jpg" alt="">
                                 <i class="fa-solid fa-play"></i>
@@ -223,7 +223,7 @@
                             <h3>Heavy Metal</h3>
                             <h4>Subtitle</h4>
                         </div>
-                        <div class="flex-cont-v flex-ac-c ms-4">
+                        <div class="flex-cont-v flex-ac-c ms-2">
                             <div class="play-hover">
                                 <img src="../../assets/spotify/img/metal_lifting.jpg" alt="">
                                 <i class="fa-solid fa-play"></i>
@@ -247,7 +247,7 @@
     </main>
 
     <Footer>
-        <div class="container flex-cont flex-ac-c flex-sb">
+        <div class="flex-cont flex-ac-c flex-sb w-100">
 
 
 
@@ -270,8 +270,8 @@
 
 
 
-            <div class="flex-cont-v flex-sb flex-gap flex-ac-c">
-                <div class="mediaplayer-station flex-cont flex-sb">
+            <div class="flex-cont-v flex-sb flex-gap flex-ac-c w-100">
+                <div class="mediaplayer-station flex-cont justify-content-center align-content-center align-items-center ">
                     <div id="shuffle"><i class="fa-solid fa-shuffle"></i></div>
                     <div id="previous-song"><i class="fa-solid fa-backward-step"></i></div>
                     <div id="play-song"><i class="fa-solid fa-play"></i></div>
@@ -297,7 +297,7 @@
 
 
 
-            <div class="controller flex-cont flex-ai-s flex-sb">
+            <div class="controller flex-cont flex-ai-s flex-sb d-none d-sm-flex">
                 <i class="fa-solid fa-list"></i>
                 <i class="fa-solid fa-desktop"></i>
                 <i class="fa-solid fa-volume-high"></i>
@@ -382,10 +382,14 @@ i {
 .container {
     width: calc(100% );
     margin: 0 auto;
+    li{
+        margin: 0 0.5rem ;
+    }
 }
 
 .flex-cont {
     display: flex;
+    flex-direction: row;
 }
 
 .flex-cont-v {
@@ -480,6 +484,7 @@ i {
     border-radius: 2.5rem;
     text-align: center;
     vertical-align: middle;
+    margin-right: 1.6rem;
 }
 
 
@@ -499,6 +504,7 @@ main {
     height: 100%;
     background-color: var(--color-3);
     font-size: 1.6rem;
+    padding-right: 1.6rem;
 }
 
 .left-menu .flex-cont i {
@@ -575,7 +581,11 @@ main {
 .recently-played div div div,
 .personalized-experience div div div,
 .best-artists div div div {
-    padding: 1.6rem 0rem;
+    padding: 0.5rem 0rem;
+}
+
+.list{
+    gap: 1rem 2rem; /* row-gap column gap */
 }
 
 .categories-nav li {
@@ -585,7 +595,7 @@ main {
 .recently-played img,
 .personalized-experience img,
 .best-artists img {
-    width: 10rem;
+    width: 11rem;
 }
 
 .main-space .fa-play {
@@ -658,16 +668,21 @@ footer {
     position: relative;
     z-index: 2;
     font-size: 1.6rem;
+
+    .container{
+        width: calc( 100% - 5rem )!important;
+        margin: 0 auto;
+    }
 }
 
 .track img {
-    width: 5rem;
+    width: 7rem;
 }
 
 .track,
 .controller {
     width: 20vw;
-    min-width: 15rem;
+    min-width: 17rem;
 }
 
 .track>*,
@@ -678,8 +693,9 @@ footer {
 }
 
 .mediaplayer-station {
-    min-width: 20rem;
     width: 40%;
+    min-width: 5rem;
+    margin: 0 auto;
 }
 
 .fa-heart.fa-solid {
@@ -687,8 +703,9 @@ footer {
 }
 
 .mediaplayer {
-    min-width: 20rem;
-    width: 40vw;
+    width: 50%;
+    min-width: 5rem;
+    margin: 0 auto;
 }
 
 #mediaplayer-bar {
@@ -789,6 +806,14 @@ footer {
     }
     .banner {
         width: calc(100% - 6rem);
+    }
+    .list{
+        gap: 0rem 0rem; /* row-gap column gap */
+    }
+    .recently-played img,
+    .personalized-experience img,
+    .best-artists img {
+        width: 8rem;
     }
 }
 }
