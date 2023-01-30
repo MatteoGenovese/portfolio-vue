@@ -100,34 +100,7 @@ export default {
 
 header {
   color: white;
-  // height: 4rem;
-  // background-color: #000;
-  // color: white;
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: center;
-  // padding-left: 10px;
-  // padding-right: 10px;
 
-  // nav{
-  //     height: 100%;
-  //     display: flex;
-  //     align-items: center;
-  //   ul{
-  //     height: 100%;
-  //     display: block;
-  //     align-items: center;
-  //     margin-bottom: 0;
-  //     li{
-  //       height: 100%;
-  //       display: block;
-  //       align-items: center;
-  //       list-style: none;
-  //       padding: 10px;
-  //     }
-  //     }
-    
-  // }
   .search-bar{
     flex-grow: 1;
     justify-content:start;
