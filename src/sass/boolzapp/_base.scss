@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before {
+    /*::after,*::before perchè * non copre questi pseudo elementi*/
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    /*eredita tutto ciò che viene messo nel box sizing del body*/
+}
+
+html {
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+    //all the larger ones before the smaller ones
+
+}
+
+body {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+

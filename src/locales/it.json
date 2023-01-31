@@ -98,7 +98,7 @@
                     "Html+Css"
                 ],
                 "gitHubLink": "https://github.com/MatteoGenovese/vue-boolzapp",
-                "webSiteLink": ""
+                "webSiteLink": "/boolzapp/"
             },
             {
                 "id": 5,
@@ -120,7 +120,7 @@
                 "visible": true,
                 "title": "Dropbox",
                 "gitHubLink": "https://github.com/MatteoGenovese/htmlcss-dropbox",
-                "webSiteLink": "",
+                "webSiteLink": "/dropbox/",
                 "description": "Il progetto consisteva nella creazione di un sito web statico ispirato al famoso servizio di archiviazione e condivisione di file Dropbox. <br>È stato utilizzato il codice HTML e CSS per creare un sito con un design simile.",
                 "tags": [
                     "Html+Css"

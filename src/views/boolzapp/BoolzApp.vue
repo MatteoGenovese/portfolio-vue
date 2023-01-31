@@ -1,5 +1,23 @@
 <template>
     <div class="boolzapp">
+
+
+
+            <div class="visual-message">
+                <div class="visual-message_text">
+                    <span class="fi fi-gb"></span>
+                    This page is designed for viewing on desktop screens and may not be compatible with smaller devices. I recommend accessing this page from a computer for the best browsing experience, or using the zoom out function to adjust the display of the content.
+                    <br>
+                    <br>
+                    ------------------------------
+                    <br>
+                    <br>
+                    <span class="fi fi-it"></span>
+                    Questa pagina è progettata per essere visualizzata su schermi desktop e potrebbe non essere compatibile con dispositivi più piccoli. Ti suggerisco di accedere a questa pagina da un computer per un'esperienza di navigazione ottimale, oppure di utilizzare la funzione di zoom indietro per adattare la visualizzazione del contenuto.
+    
+                </div>
+            </div>
+
         <div class="" id="left-container">
 
             <div class="h60px" id="user">
@@ -360,7 +378,13 @@ export default {
 </script>
 
 <style lang="scss" >
+
+@import "../../sass/boolzapp/app.scss";
+
+
 .boolzapp {
+
+
 
     height: 90vh;
         width: 80vw;
@@ -368,7 +392,40 @@ export default {
         margin: 5vh auto;
         display: flex;
         background-color: #429488;
+        .visual-message{
+            display: none;
+            @include respond(tab-port) {
+                display: inline-block;
+                padding: 5rem;
+                width: 100%;
+                height: 100vh;
+                background: rgba(0, 0, 0, 0.9);
+                position: fixed;
+                z-index: 10000;
+                color: white;
+            }
+            &__text{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+                font-size: 2.5rem!important;
 
+                @include respond(tab-port) { 
+                    font-size: 2rem!important;                
+                }
+                @include respond(phone) {
+                    font-size: 1.5rem!important;
+                }
+
+
+                }
+            }
+        @include respond(tab-port) {
+            margin: 0;
+            
+        }
     * {
         margin: 0px;
         padding: 0px;

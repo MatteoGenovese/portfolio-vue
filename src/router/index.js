@@ -7,6 +7,7 @@ import BoolzApp from '../views/boolzapp/BoolzApp.vue'
 import HomeDCComics from '../views/dccomics/HomeDCComics.vue'
 import HomePlaystation from '../views/playstation/HomePlaystation.vue'
 import HomeSpotify from '../views/spotify/HomeSpotify.vue'
+import HomeDropbox from '../views/dropbox/HomeDropbox.vue'
 
 
 import i18n from '../i18n'
@@ -26,6 +27,11 @@ const router = new VueRouter({
             path: '/boolflix/',
             name: 'boolflix',
             component: HomeBoolflix
+        },
+        {
+            path: '/dropbox/',
+            name: 'dropbox',
+            component: HomeDropbox
         },
         {
             path: '/spotify/',
